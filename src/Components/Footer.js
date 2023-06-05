@@ -7,8 +7,16 @@ export const Footer = () => {
       navChildren: [
         { title: "Berita", link: "/berita" },
         { title: "Publikasi", link: "/publikasi" },
-        { title: "Statistik", link: "/statistik" },
-        { title: "Layanan Kesehatan", link: "/layanan" },
+        {
+          title: "Statistik",
+          link: "https://satusehat.kemkes.go.id/dashboard/",
+          external: true,
+        },
+        {
+          title: "Layanan Kesehatan",
+          link: "https://upk.kemkes.go.id/new/",
+          external: true,
+        },
       ],
     },
     {
@@ -16,15 +24,19 @@ export const Footer = () => {
       navChildren: [
         {
           title: "Perizinan Produksi dan Distribusi Alat Kesehatan",
-          link: "/izin",
+          link: "https://sertifikasialkes.kemkes.go.id/",
           external: true,
         },
         {
           title: "Registrasi Alat Kesehatan",
-          link: "/publikasi",
+          link: "https://regalkes.kemkes.go.id/",
           external: true,
         },
-        { title: "Registrasi Dokter", link: "/statistik", external: true },
+        {
+          title: "Registrasi Dokter",
+          link: "https://registrasi.kki.go.id/",
+          external: true,
+        },
         { title: "Peraturan Peundangan", link: "/peraturan" },
       ],
     },
@@ -40,10 +52,10 @@ export const Footer = () => {
     {
       title: "Media Sosial",
       navChildren: [
-        { title: "Instagram", link: "/visi", external: true },
-        { title: "Twitter", link: "/struktur", external: true },
-        { title: "Facebook", link: "/tugas", external: true },
-        { title: "Youtube", link: "/unit", external: true },
+        { title: "Instagram", link: "/visi" },
+        { title: "Twitter", link: "/struktur" },
+        { title: "Facebook", link: "/tugas" },
+        { title: "Youtube", link: "/unit" },
       ],
     },
   ];
@@ -78,6 +90,7 @@ export const Footer = () => {
                         <p className="mt-1">
                           <a
                             href={navChild.link}
+                            target="_blank"
                             className="inline-flex gap-x-2 text-gray-400  hover:text-gray-500 dark:text-gray-400 dark:hover:text-gray-200"
                           >
                             {navChild.title}

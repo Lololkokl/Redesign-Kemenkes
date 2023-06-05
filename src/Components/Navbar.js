@@ -7,8 +7,16 @@ export const Navbar = () => {
       navChildren: [
         { title: "Berita", link: "/berita" },
         { title: "Publikasi", link: "/publikasi" },
-        { title: "Statistik", link: "/statistik" },
-        { title: "Layanan Kesehatan", link: "/layanan" },
+        {
+          title: "Statistik",
+          link: "https://satusehat.kemkes.go.id/dashboard/",
+          external: true,
+        },
+        {
+          title: "Layanan Kesehatan",
+          link: "https://upk.kemkes.go.id/new/",
+          external: true,
+        },
       ],
     },
     {
@@ -16,15 +24,19 @@ export const Navbar = () => {
       navChildren: [
         {
           title: "Perizinan Produksi dan Distribusi Alat Kesehatan",
-          link: "/izin",
+          link: "https://sertifikasialkes.kemkes.go.id/",
           external: true,
         },
         {
           title: "Registrasi Alat Kesehatan",
-          link: "/publikasi",
+          link: "https://regalkes.kemkes.go.id/",
           external: true,
         },
-        { title: "Registrasi Dokter", link: "/statistik", external: true },
+        {
+          title: "Registrasi Dokter",
+          link: "https://registrasi.kki.go.id/",
+          external: true,
+        },
         { title: "Peraturan Peundangan", link: "/peraturan" },
       ],
     },
@@ -49,7 +61,11 @@ export const Navbar = () => {
             className="flex-none text-xl font-semibold dark:text-white"
             to="/redesign-web-kemenkes"
           >
-            <img src="./images/logoKemenkes.png" alt="" className="w-[150px]" />
+            <img
+              src="./redesign-web-kemenkes/images/logoKemenkes.png"
+              alt=""
+              className="w-[150px]"
+            />
           </NavLink>
           <div className="sm:hidden">
             <button
@@ -108,6 +124,7 @@ export const Navbar = () => {
                               <a
                                 className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-white hover:bg-white hover:text-primary dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
                                 href={navChild.link}
+                                target="_blank"
                               >
                                 {navChild.title}
                               </a>

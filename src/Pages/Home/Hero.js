@@ -1,6 +1,6 @@
 export const Hero = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-y-12 my-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-y-8 md:gap-y-32 mt-4 md:mt-12 mb-24">
       <div className="hidden md:block">
         <h1 className="text-2xl md:text-5xl font-bold text-primary">
           Masyarakat Sehat,
@@ -13,9 +13,13 @@ export const Hero = () => {
       <h1 className="text-2xl font-bold text-center block md:hidden text-primary">
         Masyarakat Sehat, Indonesia Kuat
       </h1>
-      <img src="./images/1.png" alt="" />
+      <img src="./redesign-web-kemenkes/images/1.png" alt="" />
 
-      <img src="./images/2.png" alt="" className="hidden md:inline-block" />
+      <img
+        src="./redesign-web-kemenkes/images/2.png"
+        alt=""
+        className="hidden md:inline-block"
+      />
       <div>
         <h1 className="text-lg md:text-3xl font-bold self-end text-primary my-2">
           Kesehatan Untuk Semua

@@ -60,7 +60,7 @@ export const Visi = () => {
   ];
 
   return (
-    <div className="mx-48 mt-12 mb-24">
+    <div className="mx-16 md:mx-48 mt-12 mb-24">
       <Pagetitle text="Visi dan Misi" />
       {visis.map((visi) => {
         return <VisiList id={visi.id} judul={visi.judul} items={visi.items} />;
