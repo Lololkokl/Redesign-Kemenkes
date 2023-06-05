@@ -26,7 +26,7 @@ export const Berita = () => {
             <NavLink to={"/redesign-web-kemenkes/berita/detail"}>
               <div className="card flex flex-col justify-center">
                 <img
-                  src={"." + newItem.img}
+                  src={newItem.img}
                   alt=""
                   srcset=""
                   className="w-full h-48 object-cover"
