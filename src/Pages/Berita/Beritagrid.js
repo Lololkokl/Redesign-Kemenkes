@@ -4,55 +4,55 @@ export const Beritagrid = () => {
   const news = [
     {
       id: 1,
-      img: "/images/3.png",
+      img: "/redesign-web-kemenkes/images/3.png",
       headline: "Olahraga Efektif untuk Diet Sehat, Ini Penjelasannya",
       tanggal: "19 Juni 2023",
     },
     {
       id: 2,
-      img: "/images/4.png",
+      img: "/redesign-web-kemenkes/images/4.png",
       headline: "Olahraga Efektif untuk Diet Sehat, Ini Penjelasannya",
       tanggal: "19 Juni 2023",
     },
     {
       id: 3,
-      img: "/images/5.png",
+      img: "/redesign-web-kemenkes/images/5.png",
       headline: "Olahraga Efektif untuk Diet Sehat, Ini Penjelasannya",
       tanggal: "19 Juni 2023",
     },
     {
       id: 4,
-      img: "/images/5.png",
+      img: "/redesign-web-kemenkes/images/5.png",
       headline: "Olahraga Efektif untuk Diet Sehat, Ini Penjelasannya",
       tanggal: "19 Juni 2023",
     },
     {
       id: 5,
-      img: "/images/5.png",
+      img: "/redesign-web-kemenkes/images/5.png",
       headline: "Olahraga Efektif untuk Diet Sehat, Ini Penjelasannya",
       tanggal: "19 Juni 2023",
     },
     {
       id: 6,
-      img: "/images/5.png",
+      img: "/redesign-web-kemenkes/images/5.png",
       headline: "Olahraga Efektif untuk Diet Sehat, Ini Penjelasannya",
       tanggal: "19 Juni 2023",
     },
     {
       id: 7,
-      img: "/images/5.png",
+      img: "/redesign-web-kemenkes/images/5.png",
       headline: "Olahraga Efektif untuk Diet Sehat, Ini Penjelasannya",
       tanggal: "19 Juni 2023",
     },
     {
       id: 8,
-      img: "/images/5.png",
+      img: "/redesign-web-kemenkes/images/5.png",
       headline: "Olahraga Efektif untuk Diet Sehat, Ini Penjelasannya",
       tanggal: "19 Juni 2023",
     },
     {
       id: 9,
-      img: "/images/5.png",
+      img: "/redesign-web-kemenkes/images/5.png",
       headline: "Olahraga Efektif untuk Diet Sehat, Ini Penjelasannya",
       tanggal: "19 Juni 2023",
     },
@@ -65,7 +65,7 @@ export const Beritagrid = () => {
             <NavLink to={"/redesign-web-kemenkes/berita/detail"}>
               <div className="card flex flex-col justify-center">
                 <img
-                  src={"." + newItem.img}
+                  src={newItem.img}
                   alt=""
                   srcset=""
                   className="w-full h-48 object-cover"

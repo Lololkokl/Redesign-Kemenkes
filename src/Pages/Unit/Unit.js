@@ -28,18 +28,30 @@ export const Unit = () => {
   return (
     <div className="mx-16 md:mx-48 mt-12 mb-24">
       <Pagetitle text="Unit Kerja dan Pejabat" />
-      <div className="flex">
-        <p>Unit Kerja</p>
-        <select name="" id="">
+      <div className="flex items-center gap-5">
+        <label
+          for="unit"
+          className="block text-sm font-medium text-gray-900 dark:text-white "
+        >
+          Unit Kerja
+        </label>
+        <select
+          id="unit"
+          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-6/12 md:w-2/12 p-2.5  "
+        >
+          <option selected>Unit Kerja</option>
           <option value="">Eselon I</option>
           <option value="">Eselon II</option>
+          <option value="">Eselon III</option>
         </select>
       </div>
 
       {staffs.map((staff) => {
         return (
           <div id={staff.id} className="my-8">
-            <h2 className="text-gray-400 font-bold">{staff.jabatan}</h2>
+            <h2 className="text-gray-400 font-bold text-center md:text-start">
+              {staff.jabatan}
+            </h2>
             <h2 className="font-bold text-center md:text-start">
               {staff.nama}
             </h2>

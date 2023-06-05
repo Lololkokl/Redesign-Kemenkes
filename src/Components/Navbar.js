@@ -62,7 +62,7 @@ export const Navbar = () => {
             to="/redesign-web-kemenkes"
           >
             <img
-              src="./redesign-web-kemenkes/images/logoKemenkes.png"
+              src="/redesign-web-kemenkes/images/logoKemenkes.png"
               alt=""
               className="w-[150px]"
             />
