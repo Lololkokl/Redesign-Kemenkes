@@ -1,24 +1,70 @@
+import { NavLink } from "react-router-dom";
+
 export const Navbar = () => {
+  const navItems = [
+    {
+      title: "Untuk Publik",
+      navChildren: [
+        { title: "Berita", link: "/berita" },
+        { title: "Publikasi", link: "/publikasi" },
+        { title: "Statistik", link: "/statistik" },
+        { title: "Layanan Kesehatan", link: "/layanan" },
+      ],
+    },
+    {
+      title: "Untuk Profesional",
+      navChildren: [
+        {
+          title: "Perizinan Produksi dan Distribusi Alat Kesehatan",
+          link: "/izin",
+          external: true,
+        },
+        {
+          title: "Registrasi Alat Kesehatan",
+          link: "/publikasi",
+          external: true,
+        },
+        { title: "Registrasi Dokter", link: "/statistik", external: true },
+        { title: "Peraturan Peundangan", link: "/peraturan" },
+      ],
+    },
+    {
+      title: "Tentang Kami",
+      navChildren: [
+        { title: "Visi dan Misi", link: "/visi" },
+        { title: "Struktur", link: "/struktur" },
+        { title: "Tugas dan Fungsi", link: "/tugas" },
+        { title: "Unit Kerja dan Pejabat", link: "/unit" },
+      ],
+    },
+  ];
   return (
-    <header class="relative flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-4 dark:bg-gray-800">
+    <header className="relative flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-4 dark:bg-gray-800">
       <nav
-        class="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
+        className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
         aria-label="Global"
       >
-        <div class="flex items-center justify-between">
-          <a class="flex-none text-xl font-semibold dark:text-white" href="#">
-            Kementerian Kesehatan
-          </a>
-          <div class="sm:hidden">
+        <div className="flex items-center justify-between">
+          <NavLink
+            className="flex-none text-xl font-semibold dark:text-white"
+            to="/redesign-web-kemenkes"
+          >
+            <img
+              src="./redesign-web-kemenkes/images/logoKemenkes.png"
+              alt=""
+              className="w-[150px]"
+            />
+          </NavLink>
+          <div className="sm:hidden">
             <button
               type="button"
-              class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800"
+              className="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800"
               data-hs-collapse="#navbar-collapse-basic"
               aria-controls="navbar-collapse-basic"
               aria-label="Toggle navigation"
             >
               <svg
-                class="hs-collapse-open:hidden w-4 h-4"
+                className="hs-collapse-open:hidden w-4 h-4"
                 width="16"
                 height="16"
                 fill="currentColor"
@@ -30,7 +76,7 @@ export const Navbar = () => {
                 />
               </svg>
               <svg
-                class="hs-collapse-open:block hidden w-4 h-4"
+                className="hs-collapse-open:block hidden w-4 h-4"
                 width="16"
                 height="16"
                 fill="currentColor"
@@ -42,52 +88,50 @@ export const Navbar = () => {
           </div>
         </div>
 
-        <div id="navbar-collapse-basic" class="hidden basis-full grow sm:block">
-          <div class="flex flex-col gap-10 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:pl-5">
-            <a class="font-medium text-blue-500" href="#" aria-current="page">
-              Untuk Publik
-            </a>
+        <div
+          id="navbar-collapse-basic"
+          className="hidden basis-full grow sm:block"
+        >
+          <div className="flex flex-col gap-10 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:pl-5 border-primary">
+            {navItems.map((navItem) => {
+              return (
+                <div className="hs-dropdown [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] sm:[--trigger:hover]">
+                  <button
+                    type="button"
+                    className="flex items-center w-full text-gray-600 hover:text-primary font-medium dark:text-gray-400 dark:hover:text-gray-500"
+                  >
+                    {navItem.title}
+                  </button>
 
-            <div class="hs-dropdown [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] sm:[--trigger:hover]">
-              <button
-                type="button"
-                class="flex items-center w-full text-gray-600 hover:text-gray-400 font-medium dark:text-gray-400 dark:hover:text-gray-500"
-              >
-                Untuk Profesional
-              </button>
-
-              <div class="hs-dropdown-menu transition-[opacity,margin] sm:border duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-full hidden z-10 top-full left-0 min-w-[15rem] bg-white sm:shadow-md rounded-lg p-2 dark:bg-gray-800 sm:dark:border dark:border-gray-700 dark:divide-gray-700 before:absolute before:-top-5 before:left-0 before:w-full before:h-5">
-                <div class="sm:grid sm:grid-cols-1">
-                  <div class="flex flex-col">
-                    <a
-                      class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
-                      href="#"
-                    >
-                      Tentang Kami
-                    </a>
-                    <a
-                      class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
-                      href="#"
-                    >
-                      Services
-                    </a>
-                    <a
-                      class="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
-                      href="#"
-                    >
-                      Customer Story
-                    </a>
+                  <div className="hs-dropdown-menu transition-[opacity,margin] sm:border duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-full hidden z-10 top-full left-0 min-w-[15rem] bg-primary sm:shadow-md  p-2 dark:bg-gray-800 sm:dark:border dark:border-gray-700 dark:divide-gray-700 before:absolute before:-top-5 before:left-0 before:w-full before:h-5">
+                    <div className="sm:grid sm:grid-cols-1">
+                      <div className="flex flex-col">
+                        {navItem.navChildren.map((navChild) => {
+                          if (navChild.external === true) {
+                            return (
+                              <a
+                                className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-white hover:bg-white hover:text-primary dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+                                href={navChild.link}
+                              >
+                                {navChild.title}
+                              </a>
+                            );
+                          }
+                          return (
+                            <NavLink
+                              className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-white hover:bg-white hover:text-primary dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+                              to={"redesign-web-kemenkes" + navChild.link}
+                            >
+                              {navChild.title}
+                            </NavLink>
+                          );
+                        })}
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            <a
-              class="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500"
-              href="#"
-            >
-              Link
-            </a>
+              );
+            })}
           </div>
         </div>
       </nav>

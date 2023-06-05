@@ -1,226 +1,106 @@
+import { NavLink } from "react-router-dom";
+
 export const Footer = () => {
+  const navItems = [
+    {
+      title: "Untuk Publik",
+      navChildren: [
+        { title: "Berita", link: "/berita" },
+        { title: "Publikasi", link: "/publikasi" },
+        { title: "Statistik", link: "/statistik" },
+        { title: "Layanan Kesehatan", link: "/layanan" },
+      ],
+    },
+    {
+      title: "Untuk Profesional",
+      navChildren: [
+        {
+          title: "Perizinan Produksi dan Distribusi Alat Kesehatan",
+          link: "/izin",
+          external: true,
+        },
+        {
+          title: "Registrasi Alat Kesehatan",
+          link: "/publikasi",
+          external: true,
+        },
+        { title: "Registrasi Dokter", link: "/statistik", external: true },
+        { title: "Peraturan Peundangan", link: "/peraturan" },
+      ],
+    },
+    {
+      title: "Tentang Kami",
+      navChildren: [
+        { title: "Visi dan Misi", link: "/visi" },
+        { title: "Struktur", link: "/struktur" },
+        { title: "Tugas dan Fungsi", link: "/tugas" },
+        { title: "Unit Kerja dan Pejabat", link: "/unit" },
+      ],
+    },
+    {
+      title: "Media Sosial",
+      navChildren: [
+        { title: "Instagram", link: "/visi", external: true },
+        { title: "Twitter", link: "/struktur", external: true },
+        { title: "Facebook", link: "/tugas", external: true },
+        { title: "Youtube", link: "/unit", external: true },
+      ],
+    },
+  ];
   return (
-    <footer class="w-full py-10 px-4 sm:px-6 lg:px-8 mx-auto bg-black">
-      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 mb-10">
-        <div class="col-span-full hidden lg:col-span-2 lg:block">
-          <a
-            class="flex-none text-xl font-semibold dark:text-white"
+    <footer className="w-full py-10 px-4 sm:px-6 lg:px-8 mx-auto bg-black">
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 mb-10">
+        <div className="col-span-full hidden lg:col-span-2 lg:block">
+          <h4
+            className="flex-none text-md font-semibold text-white"
             href="#"
             aria-label="Brand"
           >
-            Brand
-          </a>
-          <p class="mt-3 text-xs sm:text-sm text-gray-600 dark:text-gray-400">
-            © 2022 Preline.
+            Kementerian Kesehatan
+          </h4>
+          <p className="mt-3 text-xs sm:text-sm text-white">
+            Jl. H.R. Rasuna Said Blok X5 Kav 4-9 Kuningan, Jakarta Selatan
+            1500567
           </p>
         </div>
 
-        <div>
-          <h4 class="text-xs font-semibold text-gray-900 uppercase dark:text-gray-100">
-            Product
-          </h4>
-
-          <div class="mt-3 grid space-y-3 text-sm">
-            <p>
-              <a
-                class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                href="#"
-              >
-                Pricing
-              </a>
-            </p>
-            <p>
-              <a
-                class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                href="#"
-              >
-                Changelog
-              </a>
-            </p>
-            <p>
-              <a
-                class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                href="#"
-              >
-                Docs
-              </a>
-            </p>
-            <p>
-              <a
-                class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                href="#"
-              >
-                Download
-              </a>
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <h4 class="text-xs font-semibold text-gray-900 uppercase dark:text-gray-100">
-            Company
-          </h4>
-
-          <div class="mt-3 grid space-y-3 text-sm">
-            <p>
-              <a
-                class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                href="#"
-              >
-                About us
-              </a>
-            </p>
-            <p>
-              <a
-                class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                href="#"
-              >
-                Blog
-              </a>
-            </p>
-            <p>
-              <a
-                class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                href="#"
-              >
-                Careers
-              </a>{" "}
-              <span class="inline text-blue-600 dark:text-blue-500">
-                — We're hiring
-              </span>
-            </p>
-            <p>
-              <a
-                class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                href="#"
-              >
-                Customers
-              </a>
-            </p>
-            <p>
-              <a
-                class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                href="#"
-              >
-                Newsroom
-              </a>
-            </p>
-            <p>
-              <a
-                class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                href="#"
-              >
-                Sitemap
-              </a>
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <h4 class="text-xs font-semibold text-gray-900 uppercase dark:text-gray-100">
-            Resources
-          </h4>
-
-          <div class="mt-3 grid space-y-3 text-sm">
-            <p>
-              <a
-                class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                href="#"
-              >
-                Community
-              </a>
-            </p>
-            <p>
-              <a
-                class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                href="#"
-              >
-                Help & Support
-              </a>
-            </p>
-            <p>
-              <a
-                class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                href="#"
-              >
-                eBook
-              </a>
-            </p>
-            <p>
-              <a
-                class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                href="#"
-              >
-                What's New
-              </a>
-            </p>
-            <p>
-              <a
-                class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                href="#"
-              >
-                Status
-              </a>
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <h4 class="text-xs font-semibold text-gray-900 uppercase dark:text-gray-100">
-            Developers
-          </h4>
-
-          <div class="mt-3 grid space-y-3 text-sm">
-            <p>
-              <a
-                class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                href="#"
-              >
-                Api
-              </a>
-            </p>
-            <p>
-              <a
-                class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                href="#"
-              >
-                Status
-              </a>
-            </p>
-            <p>
-              <a
-                class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                href="#"
-              >
-                GitHub
-              </a>{" "}
-              <span class="inline text-blue-600 dark:text-blue-500">— New</span>
-            </p>
-          </div>
-
-          <h4 class="mt-7 text-xs font-semibold text-gray-900 uppercase dark:text-gray-100">
-            Industries
-          </h4>
-
-          <div class="mt-3 grid space-y-3 text-sm">
-            <p>
-              <a
-                class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                href="#"
-              >
-                Financial Services
-              </a>
-            </p>
-            <p>
-              <a
-                class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                href="#"
-              >
-                Education
-              </a>
-            </p>
-          </div>
-        </div>
+        {navItems.map((navItem) => {
+          return (
+            <div>
+              <h4 className="text-md font-semibold text-white dark:text-gray-100">
+                {navItem.title}
+              </h4>
+              <div className="mt-1 grid space-y-5 text-sm">
+                <p>
+                  {navItem.navChildren.map((navChild) => {
+                    if (navChild.external === true) {
+                      return (
+                        <p className="mt-1">
+                          <a
+                            href={navChild.link}
+                            className="inline-flex gap-x-2 text-gray-400  hover:text-gray-500 dark:text-gray-400 dark:hover:text-gray-200"
+                          >
+                            {navChild.title}
+                          </a>
+                        </p>
+                      );
+                    }
+                    return (
+                      <p className="mt-1">
+                        <NavLink
+                          className="inline-flex gap-x-2 text-gray-400 hover:text-gray-500 dark:text-gray-400 dark:hover:text-gray-200"
+                          to={"/redesign-web-kemenkes" + navChild.link}
+                        >
+                          {navChild.title}
+                        </NavLink>
+                      </p>
+                    );
+                  })}
+                </p>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </footer>
   );

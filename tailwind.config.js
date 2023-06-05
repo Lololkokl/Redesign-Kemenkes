@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./src/**/*.{html,js}", "node_modules/preline/dist/*.js"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#00B1A9",
+        secondary: "#D2DC00",
+      },
+    },
   },
   plugins: [require("preline/plugin")],
 };
