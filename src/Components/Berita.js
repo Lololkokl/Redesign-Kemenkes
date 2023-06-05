@@ -1,17 +1,17 @@
 export const Berita = () => {
   const news = [
     {
-      img: "./redesign-web-kemenkes/images/3.png",
+      img: "./images/3.png",
       headline: "Olahraga Efektif untuk Diet Sehat, Ini Penjelasannya",
       tanggal: "19 Juni 2023",
     },
     {
-      img: "./redesign-web-kemenkes/images/4.png",
+      img: "./images/4.png",
       headline: "Olahraga Efektif untuk Diet Sehat, Ini Penjelasannya",
       tanggal: "19 Juni 2023",
     },
     {
-      img: "./redesign-web-kemenkes/images/5.png",
+      img: "./images/5.png",
       headline: "Olahraga Efektif untuk Diet Sehat, Ini Penjelasannya",
       tanggal: "19 Juni 2023",
     },

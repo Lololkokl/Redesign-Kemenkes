@@ -13,13 +13,9 @@ export const Hero = () => {
       <h1 className="text-2xl font-bold text-center block md:hidden text-primary">
         Masyarakat Sehat, Indonesia Kuat
       </h1>
-      <img src="./redesign-web-kemenkes/images/1.png" alt="" />
+      <img src="./images/1.png" alt="" />
 
-      <img
-        src="./redesign-web-kemenkes/images/2.png"
-        alt=""
-        className="hidden md:inline-block"
-      />
+      <img src="./images/2.png" alt="" className="hidden md:inline-block" />
       <div>
         <h1 className="text-lg md:text-3xl font-bold self-end text-primary my-2">
           Kesehatan Untuk Semua

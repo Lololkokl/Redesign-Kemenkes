@@ -49,11 +49,7 @@ export const Navbar = () => {
             className="flex-none text-xl font-semibold dark:text-white"
             to="/redesign-web-kemenkes"
           >
-            <img
-              src="./redesign-web-kemenkes/images/logoKemenkes.png"
-              alt=""
-              className="w-[150px]"
-            />
+            <img src="./images/logoKemenkes.png" alt="" className="w-[150px]" />
           </NavLink>
           <div className="sm:hidden">
             <button
