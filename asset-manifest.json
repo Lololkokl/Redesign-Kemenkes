@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/redesign-web-kemenkes/static/css/main.714ff7ab.css",
-    "main.js": "/redesign-web-kemenkes/static/js/main.903256a4.js",
+    "main.js": "/redesign-web-kemenkes/static/js/main.fbd328a8.js",
     "static/js/223.5bd6ba57.chunk.js": "/redesign-web-kemenkes/static/js/223.5bd6ba57.chunk.js",
     "index.html": "/redesign-web-kemenkes/index.html",
     "main.714ff7ab.css.map": "/redesign-web-kemenkes/static/css/main.714ff7ab.css.map",
-    "main.903256a4.js.map": "/redesign-web-kemenkes/static/js/main.903256a4.js.map",
+    "main.fbd328a8.js.map": "/redesign-web-kemenkes/static/js/main.fbd328a8.js.map",
     "223.5bd6ba57.chunk.js.map": "/redesign-web-kemenkes/static/js/223.5bd6ba57.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.714ff7ab.css",
-    "static/js/main.903256a4.js"
+    "static/js/main.fbd328a8.js"
   ]
 }
