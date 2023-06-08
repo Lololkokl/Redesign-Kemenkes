@@ -1,11 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer base {
-    @font-face {
-        font-family: "SanFrancisko";
-        font-weight: 700;
-        src: url('/public/fonts/SFPRODISPLAYREGULAR.OTF') format('otf')
-    }
-}
