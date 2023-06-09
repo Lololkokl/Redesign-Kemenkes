@@ -24,24 +24,15 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="/redesign-web-kemenkes" element={<Home />} />
-        <Route path="/redesign-web-kemenkes/berita" element={<Beritapage />} />
-        <Route path="/redesign-web-kemenkes/unit" element={<Unit />} />
-        <Route path="/redesign-web-kemenkes/visi" element={<Visi />} />
-        <Route path="/redesign-web-kemenkes/tugas" element={<Tugas />} />
-        <Route path="/redesign-web-kemenkes/struktur" element={<Struktur />} />
-        <Route
-          path="/redesign-web-kemenkes/berita/detail"
-          element={<Detail />}
-        />
-        <Route
-          path="/redesign-web-kemenkes/peraturan"
-          element={<Peraturan />}
-        />
-        <Route
-          path="/redesign-web-kemenkes/publikasi"
-          element={<Publikasi />}
-        />
+        <Route path="/" element={<Home />} />
+        <Route path="/berita" element={<Beritapage />} />
+        <Route path="/unit" element={<Unit />} />
+        <Route path="/visi" element={<Visi />} />
+        <Route path="/tugas" element={<Tugas />} />
+        <Route path="/struktur" element={<Struktur />} />
+        <Route path="/berita/detail" element={<Detail />} />
+        <Route path="/peraturan" element={<Peraturan />} />
+        <Route path="/publikasi" element={<Publikasi />} />
       </Routes>
       <Footer />
     </div>

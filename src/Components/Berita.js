@@ -3,17 +3,17 @@ import { NavLink } from "react-router-dom";
 export const Berita = () => {
   const news = [
     {
-      img: "/redesign-web-kemenkes/images/3.png",
+      img: "/images/3.png",
       headline: "Olahraga Efektif untuk Diet Sehat, Ini Penjelasannya",
       tanggal: "19 Juni 2023",
     },
     {
-      img: "/redesign-web-kemenkes/images/4.png",
+      img: "/images/4.png",
       headline: "Olahraga Efektif untuk Diet Sehat, Ini Penjelasannya",
       tanggal: "19 Juni 2023",
     },
     {
-      img: "/redesign-web-kemenkes/images/5.png",
+      img: "/images/5.png",
       headline: "Olahraga Efektif untuk Diet Sehat, Ini Penjelasannya",
       tanggal: "19 Juni 2023",
     },
@@ -23,7 +23,7 @@ export const Berita = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
         {news.map((newItem) => {
           return (
-            <NavLink to={"/redesign-web-kemenkes/berita/detail"}>
+            <NavLink to={"/berita/detail"}>
               <div className="card flex flex-col justify-center">
                 <img
                   src={newItem.img}

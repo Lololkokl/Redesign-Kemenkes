@@ -19,7 +19,7 @@ export const Hero = () => {
         </h1>
 
         <img
-          src="/redesign-web-kemenkes/images/1.png"
+          src="/images/1.png"
           alt=""
           className="w-full justify-self-center "
           data-aos="zoom-out-left"
@@ -29,7 +29,7 @@ export const Hero = () => {
       <GelombangAtas data="#00B1A9" />
       <div className="grid grid-cols-1 md:grid-cols-2 items-center bg-primary gap-x-12 py-8 px-12 md:px-32">
         <img
-          src="/redesign-web-kemenkes/images/2.png"
+          src="/images/2.png"
           alt=""
           className="hidden md:inline-block w-8/12 md:w-full justify-self-center"
         />

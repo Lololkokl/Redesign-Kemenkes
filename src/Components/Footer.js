@@ -102,7 +102,7 @@ export const Footer = () => {
                       <p className="mt-1">
                         <NavLink
                           className="inline-flex gap-x-2 text-gray-400 hover:text-gray-500 "
-                          to={"/redesign-web-kemenkes" + navChild.link}
+                          to={"/" + navChild.link}
                         >
                           {navChild.title}
                         </NavLink>

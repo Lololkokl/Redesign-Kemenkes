@@ -57,15 +57,8 @@ export const Navbar = () => {
         aria-label="Global"
       >
         <div className="flex items-center justify-between px-4">
-          <NavLink
-            className="flex-none text-xl font-semibold"
-            to="/redesign-web-kemenkes"
-          >
-            <img
-              src="/redesign-web-kemenkes/images/logoKemenkes.png"
-              alt=""
-              className="w-[150px]"
-            />
+          <NavLink className="flex-none text-xl font-semibold" to="/">
+            <img src="/images/logoKemenkes.png" alt="" className="w-[150px]" />
           </NavLink>
           <div className="sm:hidden">
             <button

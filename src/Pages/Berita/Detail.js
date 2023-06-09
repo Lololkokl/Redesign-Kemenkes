@@ -3,7 +3,7 @@ import { Pagetitle } from "../../Components/Pagetitle";
 export const Detail = () => {
   const berita = {
     judul: "Olahraga Efektif Untuk Diet Sehat, Ini Penjelasannya",
-    img: "/redesign-web-kemenkes/images/4.png",
+    img: "/images/4.png",
     tanggal: "19 Juni 2023",
     contents: [
       "Berolahraga dapat memberikan banyak manfaat pada tubuh, terutama untuk menjaga kesehatan dan kebugaran. Untuk menurunkan berat badan, banyak orang yang mengombinasikan olahraga dengan diet agar penurunan bobot tubuh terjadi secara signifikan. Namun, banyak orang yang bertanya bagaimana caranya melakukan aktivitas fisik dapat membuat tubuh semakin ramping? Berikut ulasannya!",

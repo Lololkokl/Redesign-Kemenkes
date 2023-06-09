@@ -43,7 +43,7 @@ export const Struktur = () => {
     <div className="mx-12 md:mx-48 mt-12 mb-24">
       <Pagetitle text="Struktur Organisasi" />
       <img
-        src="/redesign-web-kemenkes/images/struktur.png"
+        src="/images/struktur.png"
         alt=""
         className="md:w-10/12 w-full mx-auto my-6"
       />
