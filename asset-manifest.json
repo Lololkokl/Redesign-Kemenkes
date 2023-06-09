@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/redesign-web-kemenkes/static/css/main.9e9a98ca.css",
-    "main.js": "/redesign-web-kemenkes/static/js/main.d4a2cee8.js",
+    "main.css": "/redesign-web-kemenkes/static/css/main.5e4d90f4.css",
+    "main.js": "/redesign-web-kemenkes/static/js/main.c955194a.js",
     "static/js/223.5bd6ba57.chunk.js": "/redesign-web-kemenkes/static/js/223.5bd6ba57.chunk.js",
     "static/media/Sfprodis.OTF": "/redesign-web-kemenkes/static/media/Sfprodis.d1f5e6e16dd4f75c3950.OTF",
     "index.html": "/redesign-web-kemenkes/index.html",
-    "main.9e9a98ca.css.map": "/redesign-web-kemenkes/static/css/main.9e9a98ca.css.map",
-    "main.d4a2cee8.js.map": "/redesign-web-kemenkes/static/js/main.d4a2cee8.js.map",
+    "main.5e4d90f4.css.map": "/redesign-web-kemenkes/static/css/main.5e4d90f4.css.map",
+    "main.c955194a.js.map": "/redesign-web-kemenkes/static/js/main.c955194a.js.map",
     "223.5bd6ba57.chunk.js.map": "/redesign-web-kemenkes/static/js/223.5bd6ba57.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e9a98ca.css",
-    "static/js/main.d4a2cee8.js"
+    "static/css/main.5e4d90f4.css",
+    "static/js/main.c955194a.js"
   ]
 }
