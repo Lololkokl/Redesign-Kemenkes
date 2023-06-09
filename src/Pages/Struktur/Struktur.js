@@ -40,17 +40,17 @@ export const Struktur = () => {
     },
   ];
   return (
-    <div className="mx-16 md:mx-48 mt-12 mb-24">
+    <div className="mx-12 md:mx-48 mt-12 mb-24">
       <Pagetitle text="Struktur Organisasi" />
       <img
         src="/redesign-web-kemenkes/images/struktur.png"
         alt=""
-        className="w-6/12 mx-auto my-6"
+        className="w-full md:w-6/12 mx-auto my-6"
       />
       <h2 className="text-primary text-lg md:text-xl">
         Struktur Organisasi Kementerian Kesehatan RI
       </h2>
-      <ol className="list-decimal ml-4">
+      <ol className="list-inside ml-4">
         {items.map((item) => {
           return (
             <li id={item.id} className="my-2 md:mb-2">

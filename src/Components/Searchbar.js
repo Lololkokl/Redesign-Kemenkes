@@ -10,7 +10,7 @@ export const Searchbar = ({ placeholder }) => {
 
       <button
         type="button"
-        className="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-primary text-white hover:bg-white hover:border-primary hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:text-primary focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800"
+        className="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-primary text-white hover:bg-white hover:border-primary hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:text-primary focus:ring-offset-2 transition-all text-sm"
       >
         Cari
       </button>

@@ -7,6 +7,9 @@ module.exports = {
         primary: "#00B1A9",
         secondary: "#D2DC00",
       },
+      fontFamily: {
+        primary: ["Sfprodis", "sans-serif"],
+      },
     },
   },
   plugins: [require("preline/plugin")],

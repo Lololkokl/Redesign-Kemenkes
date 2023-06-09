@@ -79,7 +79,7 @@ export const Footer = () => {
         {navItems.map((navItem) => {
           return (
             <div>
-              <h4 className="text-md font-semibold text-white dark:text-gray-100">
+              <h4 className="text-md font-semibold text-white">
                 {navItem.title}
               </h4>
               <div className="mt-1 grid space-y-5 text-sm">
@@ -91,7 +91,7 @@ export const Footer = () => {
                           <a
                             href={navChild.link}
                             target="_blank"
-                            className="inline-flex gap-x-2 text-gray-400  hover:text-gray-500 dark:text-gray-400 dark:hover:text-gray-200"
+                            className="inline-flex gap-x-2 text-gray-400  hover:text-gray-500 "
                           >
                             {navChild.title}
                           </a>
@@ -101,7 +101,7 @@ export const Footer = () => {
                     return (
                       <p className="mt-1">
                         <NavLink
-                          className="inline-flex gap-x-2 text-gray-400 hover:text-gray-500 dark:text-gray-400 dark:hover:text-gray-200"
+                          className="inline-flex gap-x-2 text-gray-400 hover:text-gray-500 "
                           to={"/redesign-web-kemenkes" + navChild.link}
                         >
                           {navChild.title}

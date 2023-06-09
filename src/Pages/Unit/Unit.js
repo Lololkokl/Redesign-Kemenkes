@@ -26,7 +26,7 @@ export const Unit = () => {
     },
   ];
   return (
-    <div className="mx-16 md:mx-48 mt-12 mb-24">
+    <div className="mx-10 md:mx-48 mt-12 mb-24">
       <Pagetitle text="Unit Kerja dan Pejabat" />
       <div className="flex items-center gap-5">
         <label

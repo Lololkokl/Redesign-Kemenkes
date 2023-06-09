@@ -24,7 +24,7 @@ export const Hero = () => {
         <h1 className="text-lg md:text-3xl font-bold self-end text-primary my-2">
           Kesehatan Untuk Semua
         </h1>
-        <p className="text-justify leading-8">
+        <p className="text-justify leading-8 font-primary">
           Kementerian Kesehatan berkomitmen mambantu masyarakat Indonesia
           memiliki kesehatan yang lebih baik. Kami berupaya untuk menciptakan
           sistem kesehatan nasional yang baik dan terintegrasi mulai dari
