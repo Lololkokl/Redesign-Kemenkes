@@ -15,12 +15,14 @@ export const Detail = () => {
   return (
     <div className="mx-16 md:mx-48 mt-12 mb-24">
       <Pagetitle text="Berita" />
-      <h2 className="text-center font-bold text-2xl">{berita.judul}</h2>
-      <img src={berita.img} alt="" className="w-8/12 mx-auto" />
+      <h2 className="text-center font-bold text-2xl font-heading">
+        {berita.judul}
+      </h2>
+      <img src={berita.img} alt="" className="w-full md:w-8/12 mx-auto" />
       <p className="text-gray-400">{berita.tanggal}</p>
       <div className="leading-8 text-justify">
         {berita.contents.map((content) => {
-          return <p className="my-1">{content}</p>;
+          return <p className="my-2 font-paragraph">{content}</p>;
         })}
       </div>
     </div>
