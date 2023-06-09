@@ -4,7 +4,7 @@ import { GelombangBawah } from "../../Components/GelombangBawah";
 export const Hero = () => {
   return (
     <div className="my-12">
-      <div className="grid grid-cols-1 md:grid-cols-2 items-center mx-12 md:mx-48 mb-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center mx-12 md:mx-48 mb-12 md:mb-24">
         <div className="hidden md:block">
           <h1 className="text-2xl md:text-5xl font-bold text-primary font-heading">
             Masyarakat Sehat,
@@ -22,6 +22,7 @@ export const Hero = () => {
           src="/redesign-web-kemenkes/images/1.png"
           alt=""
           className="w-full justify-self-center "
+          data-aos="zoom-out-left"
         />
       </div>
 
@@ -32,7 +33,7 @@ export const Hero = () => {
           alt=""
           className="hidden md:inline-block w-8/12 md:w-full justify-self-center"
         />
-        <div className=" text-white font-heading">
+        <div className=" text-white font-heading ">
           <h1 className="text-lg md:text-3xl font-bold md:text-start text-center self-end my-2">
             Kesehatan Untuk Semua
           </h1>
