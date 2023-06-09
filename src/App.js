@@ -13,12 +13,30 @@ import { Detail } from "./Pages/Berita/Detail";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 function App() {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, []);
+
+  const titles = {
+    "/": "Beranda",
+    "/berita": "Berita",
+    "/visi": "Visi dan Misi",
+    "/tugas": "Tugas dan Fungsi",
+    "/struktur": "Struktur",
+    "/unit": "Unit Kerja dan Jabatan",
+    "/peraturan": "Peraturan Perundangan",
+    "/publikasi": "Publikasi",
+    "/berita/detail": "Berita",
+  };
+
+  const location = useLocation();
+  useEffect(() => {
+    document.title = titles[location.pathname] ?? "Hello World";
+  }, [location]);
 
   return (
     <div className="App">
