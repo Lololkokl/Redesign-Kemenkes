@@ -31,11 +31,11 @@ export const Berita = () => {
                   srcset=""
                   className="w-full h-48 object-cover"
                 />
-                <div className="flex-1">
-                  <p className="sm:text-xs md:text-sm font-bold">
+                <div className="flex-1 mt-2">
+                  <p className="sm:text-xs md:text-sm font-bold font-heading">
                     {newItem.headline}
                   </p>
-                  <p className="mt-2 text-xs text-gray-500">
+                  <p className="mt-1 text-xs text-gray-500 font-paragraph">
                     {newItem.tanggal}
                   </p>
                 </div>

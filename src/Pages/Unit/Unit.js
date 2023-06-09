@@ -28,7 +28,7 @@ export const Unit = () => {
   return (
     <div className="mx-10 md:mx-48 mt-12 mb-24">
       <Pagetitle text="Unit Kerja dan Pejabat" />
-      <div className="flex items-center gap-5">
+      <div className="flex justify-center md:justify-start items-center gap-5">
         <label
           for="unit"
           className="block text-sm font-medium text-gray-900 dark:text-white "
@@ -49,10 +49,10 @@ export const Unit = () => {
       {staffs.map((staff) => {
         return (
           <div id={staff.id} className="my-8">
-            <h2 className="text-gray-400 font-bold text-center md:text-start">
+            <h2 className="text-gray-400 font-bold text-center md:text-start font-heading">
               {staff.jabatan}
             </h2>
-            <h2 className="font-bold text-center md:text-start">
+            <h2 className="font-bold text-center md:text-start font-heading">
               {staff.nama}
             </h2>
             <div className="flex flex-col md:flex-row gap-4 md:gap-12 justify-center items-center md:items-start my-4">
@@ -62,7 +62,7 @@ export const Unit = () => {
                 srcset=""
                 className="w-[200px] h-[200px]"
               />
-              <div className="text-justify md:leading-7">
+              <div className="text-justify md:leading-7 font-paragraph">
                 {staff.deskripsi.map((desk) => {
                   return <p>{desk}</p>;
                 })}

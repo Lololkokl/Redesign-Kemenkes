@@ -45,9 +45,9 @@ export const Struktur = () => {
       <img
         src="/redesign-web-kemenkes/images/struktur.png"
         alt=""
-        className="w-full md:w-6/12 mx-auto my-6"
+        className="md:w-10/12 w-full mx-auto my-6"
       />
-      <h2 className="text-primary text-lg md:text-xl">
+      <h2 className="text-primary mt-4 text-lg md:text-xl">
         Struktur Organisasi Kementerian Kesehatan RI
       </h2>
       <ol className="list-inside ml-4">

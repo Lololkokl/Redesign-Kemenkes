@@ -8,7 +8,9 @@ module.exports = {
         secondary: "#D2DC00",
       },
       fontFamily: {
-        primary: ["Sfprodis", "sans-serif"],
+        alt: ["Sfprodis", "sans-serif"],
+        paragraph: ["Lato", "sans-serif"],
+        heading: ["Roboto", "sans-serif"],
       },
     },
   },

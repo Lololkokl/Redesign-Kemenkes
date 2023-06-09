@@ -60,17 +60,17 @@ export const Footer = () => {
     },
   ];
   return (
-    <footer className="w-full py-10 px-4 sm:px-6 lg:px-8 mx-auto bg-black">
+    <footer className="w-full py-10 px-4 sm:px-6 lg:px-8 mx-auto bg-black ">
       <div className="max-w-[85rem] mx-auto grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 mb-10">
         <div className="col-span-full hidden lg:col-span-2 lg:block">
           <h4
-            className="flex-none text-md font-semibold text-white"
+            className="flex-none text-md font-semibold text-white font-heading"
             href="#"
             aria-label="Brand"
           >
             Kementerian Kesehatan
           </h4>
-          <p className="mt-3 text-xs sm:text-sm text-white">
+          <p className="mt-3 text-xs sm:text-sm text-white font-paragraph">
             Jl. H.R. Rasuna Said Blok X5 Kav 4-9 Kuningan, Jakarta Selatan
             1500567
           </p>
@@ -79,7 +79,7 @@ export const Footer = () => {
         {navItems.map((navItem) => {
           return (
             <div>
-              <h4 className="text-md font-semibold text-white">
+              <h4 className="text-md font-semibold text-white font-heading">
                 {navItem.title}
               </h4>
               <div className="mt-1 grid space-y-5 text-sm">
@@ -87,7 +87,7 @@ export const Footer = () => {
                   {navItem.navChildren.map((navChild) => {
                     if (navChild.external === true) {
                       return (
-                        <p className="mt-1">
+                        <p className="mt-1 font-paragraph">
                           <a
                             href={navChild.link}
                             target="_blank"

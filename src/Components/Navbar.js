@@ -51,12 +51,12 @@ export const Navbar = () => {
     },
   ];
   return (
-    <header className="relative flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-3 ">
+    <header className="sticky top-0 inset-x-0 font-paragraph flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-3 ">
       <nav
-        className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
+        className="max-w-[85rem] w-full mx-auto md:px-4 sm:flex sm:items-center sm:justify-between"
         aria-label="Global"
       >
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between px-4">
           <NavLink
             className="flex-none text-xl font-semibold"
             to="/redesign-web-kemenkes"
@@ -64,16 +64,13 @@ export const Navbar = () => {
             <img
               src="/redesign-web-kemenkes/images/logoKemenkes.png"
               alt=""
-              className="w-[40px]"
+              className="w-[150px]"
             />
           </NavLink>
-          <div className="text-xl font-bold text-gray-700 mx-2">
-            <span>KEMENTERIAN KESEHATAN</span>
-          </div>
           <div className="sm:hidden">
             <button
               type="button"
-              className="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border font-medium  bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm"
+              className="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border font-medium  bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-primary transition-all text-sm"
               data-hs-collapse="#navbar-collapse-basic"
               aria-controls="navbar-collapse-basic"
               aria-label="Toggle navigation"
@@ -104,15 +101,30 @@ export const Navbar = () => {
         </div>
 
         <div id="navbar-collapse-basic" className="hidden grow sm:block">
-          <div className="flex flex-col gap-10 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:pl-5 border-primary">
+          <div className="flex flex-col gap-2 md:gap-10 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:pl-5 border-primary">
             {navItems.map((navItem) => {
               return (
                 <div className="hs-dropdown [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] sm:[--trigger:hover]">
                   <button
                     type="button"
-                    className="flex items-center w-full text-gray-600 hover:text-primary font-semibold"
+                    className="flex p-2 md:p-0 items-center w-full text-gray-600 hover:text-primary font-semibold"
                   >
                     {navItem.title}
+                    <svg
+                      class="ml-2 w-2.5 h-2.5 text-gray-600"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      ></path>
+                    </svg>
                   </button>
 
                   <div className="hs-dropdown-menu transition-[opacity,margin] sm:border duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-full hidden z-10 top-full left-0 min-w-[15rem] bg-primary sm:shadow-md  before:absolute before:-top-5 before:left-0 before:w-full before:h-5 p-0">
@@ -122,7 +134,7 @@ export const Navbar = () => {
                           if (navChild.external === true) {
                             return (
                               <a
-                                className="flex items-center gap-x-3.5 py-3 px-3 text-lg font-semibold text-white hover:bg-white hover:text-primary"
+                                className="flex items-center gap-x-3.5 py-3 px-4 md:text-lg text-white hover:bg-white hover:text-primary"
                                 href={navChild.link}
                                 target="_blank"
                               >
@@ -132,7 +144,7 @@ export const Navbar = () => {
                           }
                           return (
                             <NavLink
-                              className="flex items-center gap-x-3.5 py-3 px-3 text-lg font-semibold text-white hover:bg-white hover:text-primary "
+                              className="flex items-center gap-x-3.5 py-3 px-4 md:text-lg  text-white hover:bg-white hover:text-primary "
                               to={"redesign-web-kemenkes" + navChild.link}
                             >
                               {navChild.title}
