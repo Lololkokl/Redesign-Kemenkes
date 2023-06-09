@@ -60,7 +60,7 @@ export const Unit = () => {
                 src={staff.img}
                 alt=""
                 srcset=""
-                className="w-6/12 md:w-2/12 h-[200px]"
+                className="w-[200px] h-[200px]"
               />
               <div className="text-justify md:leading-7">
                 {staff.deskripsi.map((desk) => {
