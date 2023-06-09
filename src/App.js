@@ -14,12 +14,21 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { useLayoutEffect } from "react";
 
 function App() {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, []);
+
+  const Wrapper = ({ children }) => {
+    const location = useLocation();
+    useLayoutEffect(() => {
+      document.documentElement.scrollTo(0, 0);
+    }, [location.pathname]);
+    return children;
+  };
 
   const titles = {
     "/": "Beranda",
@@ -41,17 +50,19 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/berita" element={<Beritapage />} />
-        <Route path="/unit" element={<Unit />} />
-        <Route path="/visi" element={<Visi />} />
-        <Route path="/tugas" element={<Tugas />} />
-        <Route path="/struktur" element={<Struktur />} />
-        <Route path="/berita/detail" element={<Detail />} />
-        <Route path="/peraturan" element={<Peraturan />} />
-        <Route path="/publikasi" element={<Publikasi />} />
-      </Routes>
+      <Wrapper>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/berita" element={<Beritapage />} />
+          <Route path="/unit" element={<Unit />} />
+          <Route path="/visi" element={<Visi />} />
+          <Route path="/tugas" element={<Tugas />} />
+          <Route path="/struktur" element={<Struktur />} />
+          <Route path="/berita/detail" element={<Detail />} />
+          <Route path="/peraturan" element={<Peraturan />} />
+          <Route path="/publikasi" element={<Publikasi />} />
+        </Routes>
+      </Wrapper>
       <Footer />
     </div>
   );
