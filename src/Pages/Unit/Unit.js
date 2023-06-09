@@ -29,10 +29,7 @@ export const Unit = () => {
     <div className="mx-10 md:mx-48 mt-12 mb-24">
       <Pagetitle text="Unit Kerja dan Pejabat" />
       <div className="flex justify-center md:justify-start items-center gap-5">
-        <label
-          for="unit"
-          className="block text-sm font-medium text-gray-900 dark:text-white "
-        >
+        <label for="unit" className="block text-sm font-medium text-gray-900 ">
           Unit Kerja
         </label>
         <select

@@ -8,10 +8,7 @@ export const Publikasi = () => {
     <div className="mx-16 md:mx-48 mt-12 mb-24">
       <Pagetitle text="Publikasi" />
       <div className="flex justify-center md:justify-start items-center gap-5">
-        <label
-          for="unit"
-          className="block text-sm font-medium text-gray-900 dark:text-white "
-        >
+        <label for="unit" className="block text-sm font-medium text-gray-900  ">
           Jenis Publikasi
         </label>
         <select

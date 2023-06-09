@@ -5,9 +5,9 @@ export const Hero = () => {
   return (
     <div className="my-12">
       <div className="grid grid-cols-1 md:grid-cols-2 items-center mx-12 md:mx-48 mb-12 md:mb-24">
-        <div className="hidden md:block">
+        <div className="hidden md:flex flex-col gap-y-4">
           <h1 className="text-2xl md:text-5xl font-bold text-primary font-heading">
-            Masyarakat Sehat,
+            Masyarakat Sehat
           </h1>
           <h1 className="text-2xl md:text-5xl font-bold text-primary font-heading">
             Indonesia Kuat
