@@ -61,7 +61,7 @@ export const Footer = () => {
   ];
   return (
     <footer className="w-full py-10 px-4 sm:px-6 lg:px-8 mx-auto bg-black">
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 mb-10">
+      <div className="max-w-[85rem] mx-auto grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 mb-10">
         <div className="col-span-full hidden lg:col-span-2 lg:block">
           <h4
             className="flex-none text-md font-semibold text-white"
