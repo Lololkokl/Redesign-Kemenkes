@@ -138,7 +138,7 @@ export const Navbar = () => {
                           return (
                             <NavLink
                               className="flex items-center gap-x-3.5 py-3 px-4 md:text-lg  text-white hover:bg-white hover:text-primary "
-                              to={"redesign-web-kemenkes" + navChild.link}
+                              to={navChild.link}
                             >
                               {navChild.title}
                             </NavLink>
