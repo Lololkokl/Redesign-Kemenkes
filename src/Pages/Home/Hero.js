@@ -23,6 +23,7 @@ export const Hero = () => {
           alt=""
           className="w-full justify-self-center "
           data-aos="zoom-out-left"
+          data-aos-once="true"
         />
       </div>
 
@@ -32,6 +33,8 @@ export const Hero = () => {
           src="/images/2.png"
           alt=""
           className="hidden md:inline-block w-8/12 md:w-full justify-self-center"
+          data-aos="zoom-out-right"
+          data-aos-once="true"
         />
         <div className=" text-white font-heading ">
           <h1 className="text-lg md:text-3xl font-bold md:text-start text-center self-end my-2">
