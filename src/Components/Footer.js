@@ -60,7 +60,7 @@ export const Footer = () => {
     },
   ];
   return (
-    <footer className="w-full py-10 px-4 sm:px-6 lg:px-8 mx-auto bg-primary ">
+    <footer className="w-full py-10 px-4 sm:px-6 lg:px-8 mx-auto bg-z ">
       <div className="max-w-[85rem] mx-auto grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 mb-10">
         <div className="col-span-full hidden lg:col-span-2 lg:block">
           <h4
@@ -91,7 +91,7 @@ export const Footer = () => {
                           <a
                             href={navChild.link}
                             target="_blank"
-                            className="inline-flex gap-x-2 text-white hover:text-black "
+                            className="inline-flex gap-x-2 text-gray-400  hover:text-gray-500 "
                           >
                             {navChild.title}
                           </a>
@@ -101,7 +101,7 @@ export const Footer = () => {
                     return (
                       <p className="mt-1">
                         <NavLink
-                          className="inline-flex gap-x-2 text-white hover:text-black "
+                          className="inline-flex gap-x-2 text-gray-400 hover:text-gray-500 "
                           to={"/" + navChild.link}
                         >
                           {navChild.title}
