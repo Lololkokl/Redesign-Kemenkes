@@ -2,27 +2,40 @@ import { Pagetitle } from "../../Components/Pagetitle";
 
 export const Detail = () => {
   const berita = {
-    judul: "Olahraga Efektif Untuk Diet Sehat, Ini Penjelasannya",
-    img: "/images/4.png",
-    tanggal: "19 Juni 2023",
+    judul: "Kasus Gagal Ginjal Akut Pada Anak Meningkat, Orang Tua Diminta Waspada",
+    img: "/images/anak.jpg",
+    tanggal: "11 Juni 2023",
     contents: [
-      "Berolahraga dapat memberikan banyak manfaat pada tubuh, terutama untuk menjaga kesehatan dan kebugaran. Untuk menurunkan berat badan, banyak orang yang mengombinasikan olahraga dengan diet agar penurunan bobot tubuh terjadi secara signifikan. Namun, banyak orang yang bertanya bagaimana caranya melakukan aktivitas fisik dapat membuat tubuh semakin ramping? Berikut ulasannya!",
-      "Saat berolahraga, metabolisme tubuh akan meningkat sehingga kalori yang berlebih di dalam tubuh terbakar. Hal tersebut terjadi saat tubuh mengeluarkan keringat ketika melakukan aktivitas fisik. Dengan menggabungkan olahraga dengan diet, lemak yang bertumpuk di dalam tubuh tidak tergantikan dengan yang baru. Ini karena sudah dilakukan penyesuaian terkait konsumsi makanan yang sesuai dengan kalori yang dibutuhkan.",
-      "Namun, jika kamu hanya berolahraga saja tanpa adanya kombinasi dengan diet, penurunan berat badan mungkin tidak dapat terjadi atau membutuhkan waktu yang sangat lama. Ini karena kebiasaan banyak orang yang setelah berolahraga mengonsumsi porsi makanan yang lebih banyak dari yang dibakar. Alih-alih menurunkan berat badan, pertambahan justru yang terjadi.",
-      "Untuk mendapatkan hasil yang maksimal terkait manfaat dari berolahraga, kamu disarankan untuk melakukan beberapa jenis latihan aerobik paling tidak tiga kali seminggu dengan minimal 20 menit per sesinya. Dengan melakukan olahraga tingkat sedang selama 15 menit per harinya, dapat membakar hingga 100 kalori di dalam tubuh. Saat membakar 700 kalori selama seminggu, kamu dapat menurunkan berat badan hingga 4 kilogram jika konsumsi makannya benar-benar diatur.",
-    ],
+      "Kasus gagal ginjal akut yang menyerang anak-anak usia 6 bulan-18 tahun terjadi peningkatan terutama dalam dua bulan terakhir. Per tanggal 18 Oktober 2022 sebanyak 189 kasus telah dilaporkan, paling banyak didominasi usia 1-5 tahun.",
+
+      "Seiring dengan peningkatan tersebut, Kemenkes meminta orang tua untuk tidak panik, tenang namun selalu waspada. Terutama apabila anak mengalami gejala yang mengarah kepada gagal ginjal akut seperti ada diare, mual ,muntah, demam selama 3-5 hari, batuk, pilek, sering mengantuk serta jumlah air seni/air kecil semakin sedikit bahkan tidak bisa buang air kecil sama sekali.",
+      
+      "Orang tua harus selalu hati-hati, pantau terus kesehatan anak-anak kita, jika anak mengalami keluhan yang mengarah kepada penyakit gagal ginjal akut, sebaiknya segera konsultasikan ke tenaga kesehatan jangan ditunda atau mencari pengobatan sendiri,'' kata Plt. Direktur Pelayanan Kesenatan Rujukan dr. Yanti Herman, MH. Kes.",
+      
+      "Pastikan bila anak sakit cukupi kebutuhan cairan tubuhnya dengan minum air. Lebih lanjut, gejala lain yang juga perlu diwaspadai orang tua adalah perubahan warna pada urine (pekat atau kecoklatan). Bila warna urine berubah dan volume urine berkurang, bahkan tidak ada urine selama 6-8 jam (saat siang hari), orang tua diminta segera membawa anak ke fasilitas pelayanan kesehatan terdekat untuk mendapatkan penanganan lebih lanjut.",
+      
+      "Sampai saat ini kasus gagal ginjal akut pada anak belum diketahui secara pasti penyebabnya, untuk itu pemerintah bersama Ikatan Dokter Anak Indonesia (IDAI) dan tim dokter RS Cipto Mangunkusumo (RSCM) membentuk satu tim yang bertugas untuk mengamati dan menyelidiki kasus gangguan ginjal akut pada anak.",
+      
+      "Dari data yang ada gejala yang muncul di awal adalah terkait infeksi saluran cerna yang utama untuk itu Kemkes menghimbau sebagai upaya pencegahan agar orang tua tetap memastikan perilaku hidup bersih dan sehat tetap diterapkan, pastikan cuci tangan tetap diterapkan, makan makanan yang bergizi seimbang, tidak jajan sembarangan, minum air matang dan pastikan imunisasi anak rutin dan lanjuti dilengkapi.",
+
+      "Selain itu, Kemenkes juga telah menerbitkan Surat Keputusan Direktur Jenderal Pelayanan Kesehatan Nomor HK.02.02./2/I/3305/2022 tentang Tata Laksana dan Managemen Klinis Gangguan Ginjal Akut Progresif Atipikal (Atypical Progressive Acute Kidney Injury) Pada Anak di Fasilitas Pelayanan Kesehatan sebagai bagian peningkatan kewaspadaan.",
+
+      "Surat keputusan ini memuat serangkaian kegiatan yang dilakukan oleh tenaga medis dan tenaga kesehatan lain dalam melakukan penanganan terhadap pasien gagal ginjal akut sesuai dengan indikasi medis.",
+
+      "Belajar dari pandemi COVID-19, pemerintah tentu tidak bisa bekerja sendiri. Sinergi dan kolaborasi dari seluruh pihak sangat diperlukan untuk mencegah agar penyakit ini bisa di cegah sedini mungkin. Karenanya kami mengimbau kepada Dinas Kesehatan, rumah sakit maupun pintu masuk negara agar segera melaporkan apabila ada indikasi kasus yang mengarah kepada gagal ginjal akut maupun penyakit lain yang berpotensi mengalami KLB, imbuh dr. Yanti"
+      ],
   };
   return (
     <div className="mx-16 md:mx-48 mt-12 mb-24">
       <Pagetitle text="Berita" />
-      <h2 className="text-center font-bold text-2xl font-heading">
+      <h2 className="text-center font-bold text-2xl font-heading text-gray-900">
         {berita.judul}
       </h2>
-      <img src={berita.img} alt="" className="w-full md:w-8/12 mx-auto" />
+      <img src={berita.img} alt="" className="w-full md:w-8/12 mx-auto rounded-lg my-4" />
       <p className="text-gray-400">{berita.tanggal}</p>
       <div className="leading-8 text-justify">
         {berita.contents.map((content) => {
-          return <p className="my-2 font-paragraph">{content}</p>;
+          return <p className="my-2 font-paragraph text-gray-900">{content}</p>;
         })}
       </div>
     </div>

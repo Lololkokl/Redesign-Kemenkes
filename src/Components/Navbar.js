@@ -100,7 +100,7 @@ export const Navbar = () => {
                 <div className="hs-dropdown [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] sm:[--trigger:hover]">
                   <button
                     type="button"
-                    className="flex p-2 md:p-0 items-center w-full text-gray-600 hover:text-primary font-semibold"
+                    className="flex p-2 md:p-0 items-center w-full text-gray-800 hover:text-primary font-semibold"
                   >
                     {navItem.title}
                     <svg

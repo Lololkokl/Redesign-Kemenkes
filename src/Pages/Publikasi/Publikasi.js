@@ -1,7 +1,7 @@
 import { Pagetitle } from "../../Components/Pagetitle";
 import { Pagination } from "../../Components/Pagination";
 import { Searchbar } from "../../Components/Searchbar";
-import { Table } from "../../Components/Table";
+import { TablePublikasi } from "../../Components/TablePublikasi";
 
 export const Publikasi = () => {
   return (
@@ -15,14 +15,14 @@ export const Publikasi = () => {
           id="unit"
           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary focus:border-primary block w-6/12 md:w-2/12 p-2.5  "
         >
-          <option selected>Unit Kerja</option>
-          <option value="">Eselon I</option>
-          <option value="">Eselon II</option>
-          <option value="">Eselon III</option>
+          <option selected>Info Data dan Informasi</option>
+          <option value="">Profil Kesehatan Indonesia</option>
+          <option value="">Data Dasar Puskesmas</option>
+          <option value="">Buletin</option>
         </select>
       </div>
       <Searchbar placeholder="Cari Publikasi" />
-      <Table />
+      <TablePublikasi />
       <Pagination />
     </div>
   );

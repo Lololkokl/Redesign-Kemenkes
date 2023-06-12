@@ -42,18 +42,18 @@ export const Struktur = () => {
   return (
     <div className="mx-12 md:mx-48 mt-12 mb-24">
       <Pagetitle text="Struktur Organisasi" />
+      <h2 className="text-primary mt-4 text-lg md:text-xl font-paragraph cursor-pointer">
+        Struktur Organisasi Kementerian Kesehatan RI
+      </h2>
       <img
         src="/images/struktur.png"
         alt=""
         className="md:w-10/12 w-full mx-auto my-6"
       />
-      <h2 className="text-primary mt-4 text-lg md:text-xl">
-        Struktur Organisasi Kementerian Kesehatan RI
-      </h2>
-      <ol className="list-inside ml-4">
+      <ol className="list-inside">
         {items.map((item) => {
           return (
-            <li id={item.id} className="my-2 md:mb-2">
+            <li id={item.id} className="my-2 md:mb-2 text-lg md:text-xl font-paragraph cursor-pointer">
               {item.text}
             </li>
           );

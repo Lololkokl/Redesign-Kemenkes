@@ -9,7 +9,7 @@ export const Pagination = () => {
         <span class="sr-only">Previous</span>
       </a>
       <a
-        class="w-10 h-10 bg-primary text-white p-4 inline-flex items-center text-sm font-medium rounded-full"
+        class="w-10 h-10 bg-primary text-white p-4 inline-flex items-center text-sm font-medium rounded-md"
         href="#"
         aria-current="page"
       >

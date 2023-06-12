@@ -14,8 +14,11 @@ export const Hero = () => {
           </h1>
         </div>
 
-        <h1 className="text-2xl font-bold text-center block md:hidden text-primary font-heading ">
-          Masyarakat Sehat, Indonesia Kuat
+        <h1 className="text-3xl font-bold text-center block md:hidden text-primary font-heading ">
+          Masyarakat Sehat
+        </h1>
+        <h1 className="text-3xl font-bold text-center block md:hidden text-primary font-heading mb-2">
+          Indonesia Kuat
         </h1>
 
         <img
@@ -37,7 +40,7 @@ export const Hero = () => {
           data-aos-once="true"
         />
         <div className=" text-white font-heading ">
-          <h1 className="text-lg md:text-3xl font-bold md:text-start text-center self-end my-2">
+          <h1 className="text-2xl md:text-3xl font-bold md:text-start text-center self-end my-2">
             Kesehatan Untuk Semua
           </h1>
           <p className="text-justify leading-8 font-paragraph">

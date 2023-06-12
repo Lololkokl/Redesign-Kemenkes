@@ -1,6 +1,6 @@
 export const Searchbar = ({ placeholder }) => {
   return (
-    <div className="flex my-4 p-2">
+    <div className="flex my-4 py-2">
       <input
         type="text"
         id="default-input"

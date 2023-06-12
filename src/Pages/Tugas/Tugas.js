@@ -38,11 +38,11 @@ export const Tugas = () => {
   return (
     <div className="mx-16 md:mx-48 mt-12 mb-24 text-justify">
       <Pagetitle text="Tugas dan Fungsi" />
-      <h2 className="text-primary text-lg md:text-xl">
+      <h2 className="text-primary text-lg md:text-xl cursor-pointer">
         Kementerian Kesehatan Republik Indonesia
       </h2>
-      <div>
-        <div className="mt-2 leading-5">
+      <div className="ml-4">
+        <div className="mt-2 leading-5 font-paragraph">
           <p>
             Kementerian Kesehatan RI mempunyai tugas membantu Presiden dalam
             menyelenggarakan sebagian urusan pemerintahan di bidang kesehatan.
@@ -56,13 +56,22 @@ export const Tugas = () => {
         <ol className="list-decimal ml-4">
           {items.map((item) => {
             return (
-              <li id={item.id} className="my-2 md:mb-3">
+              <li id={item.id} className="my-2 md:mb-3 font-paragraph">
                 {item.text}
               </li>
             );
           })}
         </ol>
       </div>
+      <h2 className="my-2 md:mb-3 font-paragraph text-lg cursor-pointer">
+        Sekretariat Jenderal
+      </h2>
+      <h2 className="my-2 md:mb-3 font-paragraph text-lg cursor-pointer">
+        Direktorat Jenderal Kesehatan Masyarakat
+      </h2>
+      <h2 className="my-2 md:mb-3 font-paragraph text-lg cursor-pointer">
+        Direktorat Jenderal Pencegahan dan Pengendalian Penyakit
+      </h2>
     </div>
   );
 };
