@@ -13,16 +13,13 @@ export const Home = () => {
             Youtube
           </h2>
           <div className="grid gap-10 grid-cols-1 place-items-center my-5">
-            <div className="">
+            <div className="video-container">
               <iframe
-                className="rounded-lg"
+                className="rounded-lg "
                 src="https://www.youtube.com/embed/C5GW-uLfzTA"
                 title="YouTube video player"
                 frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
-                width="1000"
-                height="565"
               ></iframe>
             </div>
           </div>

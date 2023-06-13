@@ -15,7 +15,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { useLayoutEffect } from "react";
-
+import "./App.css";
 function App() {
   useEffect(() => {
     AOS.init();
