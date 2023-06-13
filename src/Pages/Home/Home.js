@@ -25,18 +25,22 @@ export const Home = () => {
           </div>
         </div>
 
-        <h2 className="mt-10 mb-4 text-2xl font-bold text-primary font-heading">
+        <h2 className="mt-10 mb-4 text-2xl font-bold text-primary font-heading text-center md:text-start">
           Berita Terbaru
         </h2>
         <Berita />
 
-        <h2 className="mt-10 mb-2 text-2xl font-bold text-primary font-heading">
+        <h2 className="mt-10 mb-2 text-2xl font-bold text-primary font-heading text-center md:text-start">
           Twitter
         </h2>
         <div className="grid gap-12 grid-cols-1 md:grid-cols-3 ">
           <TwitterTweetEmbed tweetId="1667010400217600000" />
-          <TwitterTweetEmbed tweetId="1666980949438115840" />
-          <TwitterTweetEmbed tweetId="1666833953872035840" />
+          <div className="hidden md:inline-block">
+            <TwitterTweetEmbed tweetId="1666980949438115840" />
+          </div>
+          <div className="hidden md:inline-block">
+            <TwitterTweetEmbed tweetId="1666833953872035840" />
+          </div>
         </div>
       </div>
     </div>
