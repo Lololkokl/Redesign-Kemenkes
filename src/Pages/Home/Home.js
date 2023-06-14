@@ -8,7 +8,7 @@ export const Home = () => {
       <Hero />
 
       <div className="mx-16 md:mx-48 mt-12 mb-24">
-        <div>
+        <div data-aos="fade-up" data-aos-once="true">
           <h2 className="mt-10 mb-4 text-2xl font-bold text-primary font-heading text-center">
             Youtube
           </h2>
