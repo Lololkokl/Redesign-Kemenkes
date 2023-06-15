@@ -1,4 +1,7 @@
 import { NavLink } from "react-router-dom";
+import { CiFacebook, CiTwitter } from "react-icons/ci";
+import { AiOutlineYoutube } from "react-icons/ai";
+import { BsInstagram } from "react-icons/bs";
 
 export const Footer = () => {
   const navItems = [
@@ -52,10 +55,30 @@ export const Footer = () => {
     {
       title: "Media Sosial",
       navChildren: [
-        { title: "Instagram", link: "/visi" },
-        { title: "Twitter", link: "/struktur" },
-        { title: "Facebook", link: "/tugas" },
-        { title: "Youtube", link: "/unit" },
+        {
+          title: "Instagram",
+          link: "https://www.instagram.com/kemenkes_ri/",
+          external: true,
+          icon: <BsInstagram />,
+        },
+        {
+          title: "Twitter",
+          link: "https://twitter.com/KemenkesRI",
+          external: true,
+          icon: <CiTwitter />,
+        },
+        {
+          title: "Facebook",
+          link: "/tugas",
+          external: true,
+          icon: <CiFacebook />,
+        },
+        {
+          title: "Youtube",
+          link: "https://www.youtube.com/channel/UCWBnPaPlVx2_h7Kdva52AYg",
+          external: true,
+          icon: <AiOutlineYoutube />,
+        },
       ],
     },
   ];
@@ -91,8 +114,9 @@ export const Footer = () => {
                           <a
                             href={navChild.link}
                             target="_blank"
-                            className="inline-flex gap-x-2 text-gray-400  hover:text-gray-500 "
+                            className="inline-flex gap-x-2 text-gray-400  hover:text-gray-500 items-center"
                           >
+                            {navChild.icon ? navChild.icon : ""}
                             {navChild.title}
                           </a>
                         </p>
