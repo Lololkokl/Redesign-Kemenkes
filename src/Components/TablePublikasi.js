@@ -91,17 +91,18 @@ export const TablePublikasi = ({ index }) => {
           <div class="overflow-hidden">
             <table class="min-w-full divide-y divide-gray-200">
               <thead>
-                {colNames.map((colName) => {
-                  return (
-                    <th
-                      scope="col"
-                      class="px-6 py-3 text-center text-xs font-bold text-gray-900 uppercase"
-                    >
-                      {colName}
-                    </th>
-                  );
-                })}
-                <tr></tr>
+                <tr>
+                  {colNames.map((colName) => {
+                    return (
+                      <th
+                        scope="col"
+                        class="px-6 py-3 text-center text-xs font-bold text-gray-900 uppercase"
+                      >
+                        {colName}
+                      </th>
+                    );
+                  })}
+                </tr>
               </thead>
               <tbody class="divide-y divide-gray-200">
                 {tableItems[index].map((tableItem) => {
@@ -125,7 +126,10 @@ export const TablePublikasi = ({ index }) => {
                         {tableItem.tahun}
                       </td>
                       <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-center">
-                        <a class="text-blue-500 hover:text-blue-700" href="#">
+                        <a
+                          class="text-blue-500 hover:text-blue-700 underline"
+                          href="#"
+                        >
                           PDF
                         </a>
                       </td>
