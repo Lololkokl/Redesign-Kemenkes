@@ -146,7 +146,7 @@ export const Staff = ({ index }) => {
             src={staff.img}
             alt=""
             srcset=""
-            className="w-[200px] h-[200px]"
+            className="max-w-[150px] h-[200px]"
           />
           <div className="text-justify md:leading-7 font-paragraph mb-2">
             {staff.deskripsi.map((desk) => {

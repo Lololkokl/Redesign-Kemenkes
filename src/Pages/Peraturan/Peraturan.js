@@ -1,7 +1,7 @@
 import { Pagetitle } from "../../Components/Pagetitle";
 import { Pagination } from "../../Components/Pagination";
 import { Searchbar } from "../../Components/Searchbar";
-import { TablePeraturan } from "../../Components/TablePeraturan";
+import { TablePeraturan } from "../../Components/Table/TablePeraturan";
 
 export const Peraturan = () => {
   return (

@@ -1,7 +1,7 @@
 import { Pagetitle } from "../../Components/Pagetitle";
 import { Pagination } from "../../Components/Pagination";
 import { Searchbar } from "../../Components/Searchbar";
-import { TablePublikasi } from "../../Components/TablePublikasi";
+import { TablePublikasi } from "../../Components/Table/TablePublikasi";
 import { React, useEffect, useState } from "react";
 
 export const Publikasi = () => {
@@ -16,7 +16,6 @@ export const Publikasi = () => {
     { value: "buletin", text: "Buletin" },
   ];
 
-  console.log(index);
   return (
     <div className="mx-16 md:mx-48 mt-12 mb-24">
       <Pagetitle text="Publikasi" />
