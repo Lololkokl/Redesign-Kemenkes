@@ -69,7 +69,7 @@ export const Footer = () => {
         },
         {
           title: "Facebook",
-          link: "/tugas",
+          link: "https://www.facebook.com/KementerianKesehatanRI/",
           external: true,
           icon: <CiFacebook />,
         },
