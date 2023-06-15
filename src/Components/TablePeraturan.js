@@ -47,7 +47,6 @@ export const TablePeraturan = () => {
                       <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 text-center">
                         {tableItem.no}
                       </td>
-                      ;
                       <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 text-center">
                         {tableItem.jenis}
                       </td>
