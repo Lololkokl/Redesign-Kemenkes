@@ -41,6 +41,7 @@ function App() {
     "/peraturan": "Peraturan Perundangan",
     "/publikasi": "Publikasi",
     "/berita/detail": "Berita",
+    "/linkterkait": "Link Terkait",
   };
 
   const location = useLocation();
