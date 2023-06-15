@@ -16,6 +16,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { useLayoutEffect } from "react";
 import "./App.css";
+import { LinkTerkait } from "./Pages/LinkTerkait/LinkTerkait";
 function App() {
   useEffect(() => {
     AOS.init();
@@ -61,6 +62,7 @@ function App() {
           <Route path="/berita/detail" element={<Detail />} />
           <Route path="/peraturan" element={<Peraturan />} />
           <Route path="/publikasi" element={<Publikasi />} />
+          <Route path="/linkterkait" element={<LinkTerkait />} />
         </Routes>
       </Wrapper>
       <Footer />
