@@ -12,13 +12,13 @@ export const Accordion = ({ items, struktur = true }) => {
             id="hs-basic-with-title-and-arrow-stretched-heading-two"
           >
             <button
-              className="hs-accordion-toggle hs-accordion-active:text-primary group py-3 inline-flex items-center font-heading justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-gray-500 text-xs md:text-base "
+              className="hs-accordion-toggle hs-accordion-active:text-primary group py-3 inline-flex items-center font-heading justify-between gap-x-3 w-full font-semibold text-left text-gray-800 transition hover:text-primary text-xs md:text-base "
               aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-two"
             >
               {item.text}
               <div className="mx-1">
                 <svg
-                  className="hs-accordion-active:hidden hs-accordion-active:text-primary hs-accordion-active:group-hover:text-primary block w-3 h-3 text-gray-600 group-hover:text-gray-500 "
+                  className="hs-accordion-active:hidden hs-accordion-active:text-primary hs-accordion-active:group-hover:text-primary block w-3 h-3 text-gray-600 group-hover:text-primary "
                   width="16"
                   height="16"
                   viewBox="0 0 16 16"
@@ -33,7 +33,7 @@ export const Accordion = ({ items, struktur = true }) => {
                   />
                 </svg>
                 <svg
-                  className="hs-accordion-active:block hs-accordion-active:text-primary hs-accordion-active:group-hover:text-primary hidden w- h-3 text-gray-600 group-hover:text-gray-500"
+                  className="hs-accordion-active:block hs-accordion-active:text-primary hs-accordion-active:group-hover:text-primary hidden w- h-3 text-gray-600 group-hover:text-primary"
                   width="16"
                   height="16"
                   viewBox="0 0 16 16"
