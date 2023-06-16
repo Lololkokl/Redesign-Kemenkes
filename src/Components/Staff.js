@@ -133,6 +133,72 @@ export const Staff = ({ index }) => {
         },
       ],
     },
+    {
+      id: 7,
+      text: "Inspektorat Jenderal",
+      members: [
+        {
+          jabatan: "Sekretaris Inspektorat Jenderal",
+          nama: "Heri Radison, S.K.M, M.K.M, QGIA",
+          img: "./images/itjen1.jpg",
+          deskripsi: [
+            "Pria kelahiran Cirebon ini dilantik sebagai Sekretaris Inspektorat Jenderal Kementerian Kesehatan pada tanggal 2 September 2022. Sebelumnya, beliau menjabat sebagai Inspektur Inspektorat I pada tahun 2020. Beliau menyelesaikan pendidikan dan memperoleh gelar Magister Kesehatan Masyarakat Universitas Indonesia.",  
+          ],
+        },
+        {
+          jabatan: "Inspektur I",
+          nama: "Heru Susanto, S.E., S.H., M.H., CFE, CLA",
+          img: "./images/itjen2.jpg",
+          deskripsi: [
+            "Pria kelahiran Singaraja ini dilantik sebagai Inspektur I pada tanggal 29 Desember 2022. Sebelum menjabat sebagai Inspektur I, beliau menjabat sebagai Auditor Ahli Madya pada Inspektorat Jenderal Kementerian Keuangan Republik Indonesia.",  
+          ],
+        },
+      ],
+    },
+    {
+      id: 8,
+      text: "Badan Penelitian dan Pengembangan",
+      members: [
+        {
+          jabatan: "Sekretaris Badan Kebijakan Pembangunan Kesehatan",
+          nama: "Dr. Drs. Nana Mulyana, M.Kes",
+          img: "./images/bkpk1.png",
+          deskripsi: [
+            "Sebelum dilantik sebagai Sekretaris Badan Penelitian dan Pengembangan Kesehatan pada tanggal 12 Januari 2018, pria kelahiran Subang, lulusan S2 dan S3 Ilmu Kesehatan Masyarakat Fakultas Kesehatan Masyarakat Universitas Indonesia ini menjabat sebagai Kepala Pusat Penelitian dan Pengembangan Sumber Daya dan Pelayanan Kesehatan pada tanggal 18 Januari 2016. Sebelumnya beliau menjabat sebagai Kepala Bidang Advokasi dan Kemitraan, Pusat Promosi Kesehatan. Penghargaan yang terakhir diterima: Satyalancana Karya Satya 30 Tahun.",  
+          ],
+        },
+        {
+          jabatan: "Kepala Pusat Kebijakan Upaya Kesehatan",
+          nama: "Dra. Pretty Multihartina, Ph.D",
+          img: "./images/bkpk2.png",
+          deskripsi: [
+            "Perempuan kelahiran Magetan, peraih gelar Doktor Biologi ini dilantik sebagai Kepala Pusat Kebijakan Upaya Kesehatan pada tanggal 10 Februari 2022. Sebelumnya beliau menjabat sebagai Kepala Pusat Penelitian dan Pengembangan Sumber Daya dan Pelayanan Kesehatan. Beliau pernah pula menjabat sebagai Kepala Pusat Analisis Determinan Kesehatan, serta Kepala Pusat Penelitian dan Pengembangan Biomedis dan Teknologi Dasar Kesehatan Balitbangkes tahun 2013.",  
+          ],
+        },
+      ],
+    },
+    {
+      id: 9,
+      text: "Tenaga Kesehatan",
+      members: [
+        {
+          jabatan: "Sekretaris Direktorat Jenderal Tenaga Kesehatan",
+          nama: "Sugianto, SKM, M.Sc.PH",
+          img: "./images/nakes1.png",
+          deskripsi: [
+            "Sebelum menjabat sebagai Sekretaris Direktorat Jenderal Tenaga Kesehatan pada tanggal 10 Februari 2022, pria kelahiran Cirebon ini menjabat sebagai Kepala Pusat Penelitian dan Pengembangan Humaniora dan Manajemen Kesehatan, serta Kepala Balai Penelitian Gangguan Akibat Kekurangan Iodium. Beliau merupakan lulusan Fakultas Kesehatan Masyarakat Universitas Diponegoro Semarang, dan meraih gelar Magister of Public Health dari Griffith University Australia. Penghargaan terakhir yang diterima adalah Bakti Karya Husada Tri Windu (24 tahun).",  
+          ],
+        },
+        {
+          jabatan: "Direktur Perencanaan Tenaga Kesehatan",
+          nama: "Sugiyanto, S.Pd, M.App.Sc.",
+          img: "./images/nakes2.png",
+          deskripsi: [
+            "Pria kelahiran Kulon Progo ini dilantik sebagai Direktur Perencanaan Tenaga Kesehatan pada tanggal 10 Februari 2022. Sebelumnya beliau menjabat sebagai Kepala Pusat Pendidikan Sumber Daya Manusia Kesehatan sejak tahun 2017, Direktur Poltekkes Semarang sejak tahun 2013. Beliau merupakan lulusan Teknik Radiologi dan S2 Keteknisian Medis dari Universitas Royal Melbourne Institute of Technology Australia. Penghargaan terakhir yang diterima adalah Bakti Karya Husada Tri Windu (24 tahun).",  
+          ],
+        },
+      ],
+    },
   ];
 
   return staffs[index].members.map((staff) => {

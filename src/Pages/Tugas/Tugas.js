@@ -80,6 +80,40 @@ export const Tugas = () => {
         "Pelaksanaan fungsi lain yang diberikan oleh Menteri",
       ],
     },
+    {
+      id: 7,
+      text: "Inspektorat Jenderal",
+      contents: [
+        "Penyusunan kebijakan teknis pengawasan intern di lingkungan Kementerian Kesehatan",
+        "Pelaksanaan pengawasan intern di lingkungan Kementerian Kesehatan terhadap kinerja dan keuangan melalui audit, reviu, evaluasi, pemantauan, dan kegiatan pengawasan lainnya",
+        "Pelaksanaan pengawasan untuk tujuan tertentu atas penugasan Menteri",
+        "Penyusunan laporan hasil pegawasan di lingkungan Kementerian Kesehatan",
+        "Pelaksanaan administrasi Inspektorat Jenderal",
+        "Pelaksanaan fungsi lain yang di berikan oleh Menteri",
+      ],
+    },
+    {
+      id: 8,
+      text: "Badan Penelitian dan Pengembangan Kesehatan",
+      contents: [
+        "Penyusunan kebijakan teknis penelitian dan pengembangan di bidang biomedik dan epidemiologi klinik, upaya kesehatan masyarakat, pelayanan kesehatan, kefarmasian dan alat kesehatan, sumber daya manusia, dan humaniora kesehatan",
+        "Pelaksanaan penelitian dan pengembangan di bidang biomedik dan epidemiologi klinik, upaya kesehatan masyarakat, pelayanan kesehatan, kefarmasian dan alat kesehatan, sumber daya manusia, dan humaniora kesehatan",
+        "Pemantauan, evaluasi, dan pelaporan penelitian dan pengembangan di bidang biomedik dan epidemiologi klinik, upaya kesehatan masyarakat, pelayanan kesehatan, kefarmasian dan alat kesehatan, sumber daya manusia, dan humaniora kesehatan",
+        "Pelaksanaan administrasi Badan",
+        "Pelaksanaan fungsi lain yang diberikan oleh Menteri",
+      ],
+    },
+    {
+      id: 9,
+      text: "Direktorat Jenderal Tenaga Kesehatan",
+      contents: [
+        "Penyusunan kebijakan teknis pengembangan dan pemberdayaan sumber daya manusia kesehatan di bidang perencanaan, pendayagunaan, peningkatan kompetensi, dan pembinaan mutu sumber daya manusia kesehatan",
+        "Pelaksanaan pengembangan dan pemberdayaan sumber daya manusia kesehatan di bidang perencanaan, pendayagunaan, peningkatan kompetensi, dan pembinaan mutu sumber daya manusia kesehatan",
+        "Pemantauan, evaluasi, dan pelaporan pengembangan dan pemberdayaan sumber daya manusia kesehatan di bidang perencanaan, pendayagunaan, peningkatan kompetensi, dan pembinaan mutu sumber daya manusia kesehatan",
+        "Pelaksanaan administrasi Badan",
+        "Pelaksanaan fungsi lain yang diberikan oleh Menteri",
+      ],
+    },
   ];
   return (
     <div className="mx-16 md:mx-48 mt-12 mb-24 text-justify">

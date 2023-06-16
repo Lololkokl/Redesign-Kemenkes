@@ -11,6 +11,9 @@ export const Unit = () => {
     "pencegahanpenyakit",
     "kesmas",
     "alkes",
+    "itjen",
+    "bppk",
+    "nakes",
   ];
 
   const options = [
@@ -28,6 +31,18 @@ export const Unit = () => {
     {
       value: "alkes",
       text: "Kefarmasian dan Alat Kesehatan",
+    },
+    {
+      value: "itjen",
+      text: "Inspektorat Jenderal",
+    },
+    {
+      value: "bppk",
+      text: "Badan Penelitian dan Pengembangan Kesehatan",
+    },
+    {
+      value: "nakes",
+      text: "Tenaga Kesehatan",
     },
   ];
 
