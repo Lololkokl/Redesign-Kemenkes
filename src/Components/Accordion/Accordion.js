@@ -1,6 +1,6 @@
 import { AccordionMember } from "./AccordionMember";
 
-export const Accordion = ({ items, struktur = true }) => {
+export const Accordion = ({ items, type = "struktur" }) => {
   return (
     <div className="hs-accordion-group">
       {items.map((item) => {
@@ -56,12 +56,12 @@ export const Accordion = ({ items, struktur = true }) => {
               } w-full overflow-hidden transition-[height] duration-300`}
               aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-two"
             >
-              {struktur ? (
+              {type === "struktur" ? (
                 <img src={item.image} alt="" srcset="" />
+              ) : type === "tugas" ? (
+                <AccordionMember contents={item.contents} link={false} />
               ) : (
-                <ol>
-                  <AccordionMember contents={item.contents} />
-                </ol>
+                <AccordionMember contents={item.contents} link={true} />
               )}
             </div>
           </div>

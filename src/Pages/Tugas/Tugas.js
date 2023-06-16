@@ -40,7 +40,7 @@ export const Tugas = () => {
         "Pemberian bimbingan teknis dan supervisi di bidang peningkatan pelayanan, fasilitas, dan mutu pelayanan kesehatan primer rujukan, tradisional, dan komplementer",
         "Pelaksanaan evaluasi, dan pelaporan di bidang peningkatan pelayanan, fasilitas, dan mutu pelayanan kesehatan primer rujukan, tradisional, dan komplementer",
         "Pelaksanaan administrasi Direktorat Jenderal Pelayanan Kesehatan",
-        "Pelaksanaan fungsi lain yang diberikan oleh Menteri",    
+        "Pelaksanaan fungsi lain yang diberikan oleh Menteri",
       ],
     },
     {
@@ -51,7 +51,7 @@ export const Tugas = () => {
         "Pelaksanaan kebijakan di bidang surveilans epidemiologi dan karantina, pencegahan dan pengendalian penyakit menular, penyakit tular vektor, penyakit zoonotik, dan penyakit tidak menular, serta upaya kesehatan jiwa dan Narkotika, Psikotropika, dan Zat adiktif lainnya (NAPZA)",
         "Penyusunan norma, standar, prosedur dan kriteria di bidang surveilans epidemiologi dan karantina, pencegahan dan pengendalian penyakit menular, penyakit tular vektor, penyakit zoonotik, dan penyakit tidak menular, serta upaya kesehatan jiwa dan Narkotika, Psikotropika, dan Zat adiktif lainnya (NAPZA)",
         "Pelaksanaan administrasi Direktorat Pencegahan dan Pengendalian Penyakit",
-        "Pelaksanaan fungsi lain yang diberikan Menteri",   
+        "Pelaksanaan fungsi lain yang diberikan Menteri",
       ],
     },
     {
@@ -76,15 +76,15 @@ export const Tugas = () => {
         "Penyusunan norma, standar, prosedur, dan kriteria di bidang produksi dan distribusi sediaan farmasi, alat kesehatan dan perbekalan kesehatan rumah tangga, pengawasan alat kesehatan dan perbekalan rumah tangga, tata kelola perbekalan kesehatan, dan pelayanan kefarmasian",
         "Pemberian bimbingan teknis dan supervisi di bidang produksi dan distribusi sediaan farmasi, alat kesehatan dan perbekalan kesehatan rumah tangga, pengawasan alat kesehatan dan perbekalan rumah tangga, tata kelola perbekalan kesehatan, dan pelayanan kefarmasian",
         "Pelaksanaan evaluasi dan pelaporan di bidang produksi dan distribusi sediaan farmasi, alat kesehatan dan perbekalan kesehatan rumah tangga, pengawasan alat kesehatan dan perbekalan rumah tangga, tata kelola perbekalan kesehatan, dan pelayanan kefarmasian",
-        "Pelaksanaan administrasi Direktorat Jenderal Kefarmasian dan Alat Kesehatan",  
-        "Pelaksanaan fungsi lain yang diberikan oleh Menteri"
+        "Pelaksanaan administrasi Direktorat Jenderal Kefarmasian dan Alat Kesehatan",
+        "Pelaksanaan fungsi lain yang diberikan oleh Menteri",
       ],
     },
   ];
   return (
     <div className="mx-16 md:mx-48 mt-12 mb-24 text-justify">
       <Pagetitle text="Tugas dan Fungsi" />
-      <Accordion items={items} struktur={false} />
+      <Accordion items={items} type="tugas" />
     </div>
   );
 };
