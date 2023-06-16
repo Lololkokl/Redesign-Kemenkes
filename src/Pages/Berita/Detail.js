@@ -32,7 +32,7 @@ export const Detail = () => {
         {berita.judul}
       </h2>
       <img src={berita.img} alt="" className="w-full md:w-8/12 mx-auto rounded-lg my-4" />
-      <p className="text-gray-400">{berita.tanggal}</p>
+      <p className="text-gray-600">{berita.tanggal}</p>
       <div className="leading-8 text-justify">
         {berita.contents.map((content) => {
           return <p className="my-2 font-paragraph text-gray-900">{content}</p>;

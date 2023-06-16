@@ -7,12 +7,11 @@ import { React, useEffect, useState } from "react";
 export const Publikasi = () => {
   const [index, setIndex] = useState(0);
 
-  const values = ["info", "profil", "data", "buletin"];
+  const values = ["info", "profil", "buletin"];
 
   const options = [
     { value: "info", text: "Info Data dan Informasi" },
     { value: "profil", text: "Profile Kesehatan Indonesia" },
-    { value: "data", text: "Data Dasar Puskesmas" },
     { value: "buletin", text: "Buletin" },
   ];
 

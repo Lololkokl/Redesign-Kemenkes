@@ -5,48 +5,28 @@ export const Struktur = () => {
   const items = [
     {
       id: 1,
-      text: "Struktur Organisasi Direktorat Jenderal Pelayanan Kesehatan",
+      text: "Struktur Organisasi Kementerian Kesehatan",
       image: "/images/struktur.png",
     },
     {
       id: 2,
-      text: "Struktur Organisasi Direktorat Jenderal Pencegahan dan Pengendalian Penyakit",
-      image: "/images/struktur.png",
+      text: "Struktur Organisasi Direktorat Jenderal Pelayanan Kesehatan",
+      image: "/images/struktur2.jpg",
     },
     {
       id: 3,
-      text: "Struktur Organisasi Direktorat Jenderal Kesehatan Masyarakat",
-      image: "/images/struktur.png",
+      text: "Struktur Organisasi Direktorat Jenderal Pencegahan dan Pengendalian Penyakit",
+      image: "/images/struktur3.jpg",
     },
     {
       id: 4,
-      text: "Struktur Organisasi Direktorat Jenderal Kefarmasian dan Alat Kesehatan",
-      image: "/images/struktur.png",
+      text: "Struktur Organisasi Direktorat Jenderal Kesehatan Masyarakat",
+      image: "/images/struktur4.jpg",
     },
     {
       id: 5,
-      text: "Struktur Organisasi Inspektorat Jenderal",
-      image: "/images/struktur.png",
-    },
-    {
-      id: 6,
-      text: "Struktur Organisasi Badan Kebijakan Pembangunan Kesehatan",
-      image: "/images/struktur.png",
-    },
-    {
-      id: 7,
-      text: "Struktur Organisasi Direktorat Jenderal Tenaga Kesehatan",
-      image: "/images/struktur.png",
-    },
-    {
-      id: 8,
-      text: "Struktur Organisasi Pusat di Bawah Menteri",
-      image: "/images/struktur.png",
-    },
-    {
-      id: 9,
-      text: "Struktur Organisasi Staf Ahli",
-      image: "/images/struktur.png",
+      text: "Struktur Organisasi Direktorat Jenderal Kefarmasian dan Alat Kesehatan",
+      image: "/images/struktur5.jpg",
     },
   ];
   return (

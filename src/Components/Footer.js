@@ -50,6 +50,7 @@ export const Footer = () => {
         { title: "Struktur", link: "/struktur" },
         { title: "Tugas dan Fungsi", link: "/tugas" },
         { title: "Unit Kerja dan Pejabat", link: "/unit" },
+        { title: "Link Terkait", link: "/linkterkait" },
       ],
     },
     {
@@ -95,7 +96,13 @@ export const Footer = () => {
           </h4>
           <p className="mt-3 text-xs sm:text-sm text-white font-paragraph">
             Jl. H.R. Rasuna Said Blok X5 Kav 4-9 Kuningan, Jakarta Selatan
-            1500567
+            <p className="mt-3 text-xs sm:text-sm text-white font-paragraph">
+          Halo Kemenkes 1500567 
+          </p>
+            
+          </p>
+          <p className="mt-3 text-xs sm:text-sm text-white font-paragraph">
+          Email kontak@kemkes.go.id
           </p>
         </div>
 
@@ -114,7 +121,7 @@ export const Footer = () => {
                           <a
                             href={navChild.link}
                             target="_blank"
-                            className="inline-flex gap-x-2 text-gray-400  hover:text-gray-500 items-center"
+                            className="inline-flex gap-x-2 text-gray-400  hover:text-gray-600 items-center"
                           >
                             {navChild.icon ? navChild.icon : ""}
                             {navChild.title}
@@ -125,7 +132,7 @@ export const Footer = () => {
                     return (
                       <p className="mt-1">
                         <NavLink
-                          className="inline-flex gap-x-2 text-gray-400 hover:text-gray-500 "
+                          className="inline-flex gap-x-2 text-gray-400 hover:text-gray-600 "
                           to={navChild.link}
                         >
                           {navChild.title}

@@ -10,6 +10,7 @@ export const Unit = () => {
     "pelkes",
     "pencegahanpenyakit",
     "kesmas",
+    "alkes",
   ];
 
   const options = [
@@ -23,6 +24,10 @@ export const Unit = () => {
     {
       value: "kesmas",
       text: "Kesehatan Masyarakat",
+    },
+    {
+      value: "alkes",
+      text: "Kefarmasian dan Alat Kesehatan",
     },
   ];
 
