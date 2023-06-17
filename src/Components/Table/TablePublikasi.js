@@ -1,4 +1,4 @@
-export const TablePublikasi = ({ index }) => {
+export const TablePublikasi = ({ index, search = "" }) => {
   const colNames = ["No", "Sampul", "Judul", "Tahun", "Unduh"];
 
   const tableItems = [
@@ -64,6 +64,13 @@ export const TablePublikasi = ({ index }) => {
     ],
   ];
 
+  let result = [...tableItems[index]];
+  if (search !== "") {
+    result = tableItems[index].filter((tableItem) => {
+      return tableItem.judul.toLowerCase().includes(search.toLowerCase());
+    });
+  }
+
   return (
     <div className="flex flex-col">
       <div className="-m-1.5 overflow-x-auto">
@@ -85,7 +92,7 @@ export const TablePublikasi = ({ index }) => {
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
-                {tableItems[index].map((tableItem) => {
+                {result.map((tableItem) => {
                   return (
                     <tr className="border-l-red-50">
                       <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 text-center">

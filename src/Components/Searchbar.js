@@ -1,19 +1,18 @@
-export const Searchbar = ({ placeholder }) => {
+import { useState } from "react";
+
+export const Searchbar = ({ placeholder, search, setSearch }) => {
   return (
     <div className="flex my-4 py-2">
       <input
         type="text"
         id="default-input"
-        className="bg-gray-50 border border-gray-400 focus:border-primary mr-2 text-grey-500 text-sm rounded-lg focus:ring-primary block w-full p-2.5  "
+        className="bg-gray-50 border border-gray-400 focus:border-primary text-grey-500 text-sm rounded-lg focus:ring-primary block w-full p-2.5  "
         placeholder={placeholder}
+        value={search}
+        onChange={(e) => {
+          setSearch(e.target.value);
+        }}
       />
-
-      <button
-        type="button"
-        className="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-primary text-white hover:bg-white hover:border-primary hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:text-primary focus:ring-offset-2 transition-all text-sm"
-      >
-        Cari
-      </button>
     </div>
   );
 };

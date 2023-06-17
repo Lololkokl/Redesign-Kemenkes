@@ -1,4 +1,4 @@
-export const TablePeraturan = () => {
+export const TablePeraturan = ({ search = "" }) => {
   const colNames = ["No", "Jenis Peraturan", "Nomor", "Tentang", "Unduh"];
   const tableItems = [
     {
@@ -6,20 +6,32 @@ export const TablePeraturan = () => {
       jenis: "Permenkes",
       nomor: "18 Tahun 2023",
       tentang: "Kegiatan Usaha Klinik Di Kawasan Ekonomi Khusus",
+      value: "Permenkes 18 Tahun 2023",
     },
     {
       no: 2,
       jenis: "Peraturan Pemerintah",
       nomor: "109 Tahun 2012",
       tentang: "Pengamanan Bahan Yang Mengandung Zat Adiktif Tembakau",
+      value:
+        "Peraturan Pemerintah 109 Tahun 2012 Pengamanan Bahan Yang Mengandung Zat Adiktif Tembakau",
     },
     {
       no: 3,
       jenis: "Undang-Undang",
       nomor: "24 Tahun 2011",
       tentang: "Badan Penyelenggaraan Jaminan Sosial",
+      value: "Undang-Undang 24 Tahun 2011 Badan Penyelenggaraan Jaminan Sosial",
     },
   ];
+
+  let result = [...tableItems];
+  if (search !== "") {
+    result = tableItems.filter((tableItem) => {
+      return tableItem.value.toLowerCase().includes(search.toLowerCase());
+    });
+  }
+
   return (
     <div className="flex flex-col">
       <div className="-m-1.5 overflow-x-auto">
@@ -41,7 +53,7 @@ export const TablePeraturan = () => {
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
-                {tableItems.map((tableItem) => {
+                {result.map((tableItem) => {
                   return (
                     <tr className="border-l-red-50">
                       <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 text-center">
