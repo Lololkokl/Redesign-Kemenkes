@@ -10,6 +10,9 @@ import { Publikasi } from "./Pages/Publikasi/Publikasi";
 import { Unit } from "./Pages/Unit/Unit";
 import { Peraturan } from "./Pages/Peraturan/Peraturan";
 import { Detail } from "./Pages/Berita/Detail";
+import { Detail1 } from "./Pages/Berita/Detail1";
+import { Detail2 } from "./Pages/Berita/Detail2";
+import { Detail3 } from "./Pages/Berita/Detail3";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -41,6 +44,9 @@ function App() {
     "/peraturan": "Peraturan Perundangan",
     "/publikasi": "Publikasi",
     "/berita/detail": "Berita",
+    "/berita/detail1": "Berita",
+    "/berita/detail2": "Berita",
+    "/berita/detail3": "Berita",
     "/linkterkait": "Link Terkait",
   };
 
@@ -61,6 +67,9 @@ function App() {
           <Route path="/tugas" element={<Tugas />} />
           <Route path="/struktur" element={<Struktur />} />
           <Route path="/berita/detail" element={<Detail />} />
+          <Route path="/berita/detail1" element={<Detail1 />} />
+          <Route path="/berita/detail2" element={<Detail2 />} />
+          <Route path="/berita/detail3" element={<Detail3 />} />
           <Route path="/peraturan" element={<Peraturan />} />
           <Route path="/publikasi" element={<Publikasi />} />
           <Route path="/linkterkait" element={<LinkTerkait />} />

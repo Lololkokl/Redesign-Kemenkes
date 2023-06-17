@@ -7,54 +7,63 @@ export const Beritagrid = () => {
       img: "/images/anak.jpg",
       headline: "Kasus Gagal Ginjal Akut Pada Anak Meningkat, Orang Tua Diminta Waspada",
       tanggal: "11 Juni 2023",
+      link: "/berita/detail1",
     },
     {
       id: 2,
       img: "/images/hipertensi.jpg",
       headline: "Hipertensi Disebut sebagai Silent Killer, Menkes Budi Imbau Rutin Cek Tekanan Darah",
       tanggal: "10 Juni 2023",
+      link: "/berita/detail2",
     },
     {
       id: 3,
       img: "/images/tbc.png",
       headline: "Deteksi TBC Capai Rekor Tertinggi di Tahun 2022",
       tanggal: "9 Juni 2023",
+      link: "/berita/detail3",
     },
     {
       id: 4,
       img: "/images/tbc.png",
       headline: "Deteksi TBC Capai Rekor Tertinggi di Tahun 2022",
       tanggal: "9 Juni 2023",
+      link: "/berita/detail3",
     },
     {
       id: 5,
       img: "/images/anak.jpg",
       headline: "Kasus Gagal Ginjal Akut Pada Anak Meningkat, Orang Tua Diminta Waspada",
       tanggal: "11 Juni 2023",
+      link: "/berita/detail1",
     },
     {
       id: 6,
       img: "/images/hipertensi.jpg",
       headline: "Hipertensi Disebut sebagai Silent Killer, Menkes Budi Imbau Rutin Cek Tekanan Darah",
       tanggal: "10 Juni 2023",
+      link: "/berita/detail2",
     },
     {
       id: 7,
       img: "/images/hipertensi.jpg",
       headline: "Hipertensi Disebut sebagai Silent Killer, Menkes Budi Imbau Rutin Cek Tekanan Darah",
       tanggal: "10 Juni 2023",
+      link: "/berita/detail2",
     },
     {
       id: 8,
       img: "/images/tbc.png",
       headline: "Deteksi TBC Capai Rekor Tertinggi di Tahun 2022",
       tanggal: "9 Juni 2023",
+      link: "/berita/detail3",
     },
     {
       id: 9,
       img: "/images/anak.jpg",
       headline: "Kasus Gagal Ginjal Akut Pada Anak Meningkat, Orang Tua Diminta Waspada",
-      tanggal: "11 Juni 2023",
+      tanggal: "/berita/detail1",
+      link: "/berita/detail1",
     },
   ];
   return (
@@ -62,7 +71,7 @@ export const Beritagrid = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
         {news.map((newItem) => {
           return (
-            <NavLink to={"/berita/detail"}>
+            <NavLink to={newItem.link}>
               <div className="card flex flex-col justify-center">
                 <img
                   src={newItem.img}
