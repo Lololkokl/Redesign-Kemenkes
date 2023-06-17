@@ -47,7 +47,7 @@ export const TablePeraturan = ({ search = "" }) => {
       <div className="-m-1.5 overflow-x-auto">
         <div className="p-1.5 min-w-full inline-block align-middle">
           <div className="overflow-hidden">
-            <table className="min-w-full divide-y divide-gray-200">
+            <table className="min-w-full divide-y divide-gray-200 table-fixed">
               <thead>
                 <tr>
                   {colNames.map((colName) => {
@@ -69,13 +69,13 @@ export const TablePeraturan = ({ search = "" }) => {
                       <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 text-center">
                         {tableItem.no}
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 text-center">
+                      <td className="px-6 py-4 whitespace-nowrap md:w-2/12 text-sm text-gray-900 text-center">
                         {tableItem.jenis}
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 text-center">
                         {tableItem.nomor}
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 text-center">
+                      <td className="px-6 py-4 whitespace-nowrap md:w-6/12 text-sm text-gray-900 text-center">
                         {tableItem.tentang}
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-center">

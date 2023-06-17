@@ -117,7 +117,7 @@ export const TablePublikasi = ({ index, search = "" }) => {
                           className="h-full lg:w-[150px] lg:h-[225px] object-cover rounded-lg mx-auto"
                         />
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 text-center">
+                      <td className="px-6 py-4 whitespace-nowrap text-sm w-2/12 md:w-6/12 text-gray-900 text-center">
                         {tableItem.judul}
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 text-center">
