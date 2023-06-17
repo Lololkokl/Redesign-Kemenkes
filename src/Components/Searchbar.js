@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 export const Searchbar = ({ placeholder, search, setSearch }) => {
   return (
     <div className="flex my-4 py-2">

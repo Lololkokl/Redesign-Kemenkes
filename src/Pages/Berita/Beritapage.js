@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Pagetitle } from "../../Components/Pagetitle";
 import { Pagination } from "../../Components/Pagination";
 import { Searchbar } from "../../Components/Searchbar";
-import { SearchbarBerita } from "../../Components/SearchbarBerita";
 import { Beritagrid } from "./Beritagrid";
 
 export const Beritapage = () => {
