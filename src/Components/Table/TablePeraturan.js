@@ -34,7 +34,7 @@ export const TablePeraturan = ({ search = "" }) => {
     if (result.length === 0) {
       return (
         <div className="flex justify-center text-center my-5 md:my-10">
-          <h2 className="text-lg md:text-xl font-bold font-heading text-primary">
+          <h2 className="text-sm md:text-lg font-heading text-gray-500">
             Maaf peraturan perundangan yang anda cari tidak dapat ditemukan
           </h2>
         </div>
