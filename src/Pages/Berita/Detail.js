@@ -52,12 +52,6 @@ export const Detail = ({ index }) => {
         "Sebelum seseorang menderita hipertensi ada faktor risiko yang jadi penyebab hipertensi, antara lain, pola makan yang tidak sehat, biasanya pola makan dengan kandungan gula garam lemak yang melebihi batas normal setiap harinya. Kemudian aktivitas fisik yang kurang dianjurkan, untuk setiap hari bisa melakukan aktivitas fisik sekitar 15-20 menit untuk mencegah munculnya penyakit tidak menular.",
 
         "Karakteristik dari pengidap hipertensi di Indonesia yang terdiagnosis mereka mengatakan masih merasa sehat walaupun tekanan darah tinggi. Mereka tidak merasa sakit, dan ini adalah populasi yang paling besar.",
-
-        "Dr. Erwinanto dari Perhimpunan Dokter Hipertensi Indonesia mengatakan klasifikasi hipertensi di Indonesia mengacu pada klasifikasi Eropa, yakni hipertensi dibagi menjadi sejumlah derajat yaitu :",
-
-        "1. Optimal dengan tekanan darah >120/<80, 2. Normal dengan tekanan darah 120-129/80-84, 3. High Normal dengan tekanan darah 130-139/85-89, 4. Grade 1 Hypertension dengan tekanan darah 140-159 /90-99, 5. Grade 2 Hypertension dengan tekanan darah 160-179/100-109, 6. Grade 3 Hypertension dengan tekanan darah >180/ >110, 7. Isolated Systolic Hypertension dengan tekanan darah >140/>90.",
-
-        "Rata-rata tekanan darah yang harus dicapai adalah kurang dari 130/80 tapi tidak lebih rendah dari 120/70. Artinya target tekanan darahnya adalah antara 120-129/70-79,'' kata dr. Erwinanto.",
       ],
     },
     {
