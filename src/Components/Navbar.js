@@ -105,7 +105,7 @@ export const Navbar = () => {
                   >
                     {navItem.title}
                     <svg
-                      class="ml-2 w-2.5 h-2.5 text-gray-600"
+                      className="ml-2 w-2.5 h-2.5 text-gray-600"
                       width="16"
                       height="16"
                       viewBox="0 0 16 16"

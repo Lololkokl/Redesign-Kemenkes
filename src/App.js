@@ -10,9 +10,6 @@ import { Publikasi } from "./Pages/Publikasi/Publikasi";
 import { Unit } from "./Pages/Unit/Unit";
 import { Peraturan } from "./Pages/Peraturan/Peraturan";
 import { Detail } from "./Pages/Berita/Detail";
-import { Detail1 } from "./Pages/Berita/Detail1";
-import { Detail2 } from "./Pages/Berita/Detail2";
-import { Detail3 } from "./Pages/Berita/Detail3";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -20,6 +17,7 @@ import { useLocation } from "react-router-dom";
 import { useLayoutEffect } from "react";
 import "./App.css";
 import { LinkTerkait } from "./Pages/LinkTerkait/LinkTerkait";
+import { Page404 } from "./Pages/Page404";
 function App() {
   useEffect(() => {
     AOS.init();
@@ -43,10 +41,9 @@ function App() {
     "/unit": "Unit Kerja dan Jabatan",
     "/peraturan": "Peraturan Perundangan",
     "/publikasi": "Publikasi",
-    "/berita/detail": "Berita",
-    "/berita/detail1": "Berita",
-    "/berita/detail2": "Berita",
-    "/berita/detail3": "Berita",
+    "/berita/1": "Berita",
+    "/berita/2": "Berita",
+    "/berita/3": "Berita",
     "/linkterkait": "Link Terkait",
   };
 
@@ -60,16 +57,18 @@ function App() {
       <Navbar />
       <Wrapper>
         <Routes>
+          <Route path="*" element={<Page404 />} />
           <Route path="/" element={<Home />} />
           <Route path="/berita" element={<Beritapage />} />
           <Route path="/unit" element={<Unit />} />
           <Route path="/visi" element={<Visi />} />
           <Route path="/tugas" element={<Tugas />} />
           <Route path="/struktur" element={<Struktur />} />
-          <Route path="/berita/detail" element={<Detail />} />
-          <Route path="/berita/detail1" element={<Detail1 />} />
-          <Route path="/berita/detail2" element={<Detail2 />} />
-          <Route path="/berita/detail3" element={<Detail3 />} />
+          <Route path="/berita">
+            <Route path="1" element={<Detail index={1} />} />
+            <Route path="2" element={<Detail index={2} />} />
+            <Route path="3" element={<Detail index={3} />} />
+          </Route>
           <Route path="/peraturan" element={<Peraturan />} />
           <Route path="/publikasi" element={<Publikasi />} />
           <Route path="/linkterkait" element={<LinkTerkait />} />
