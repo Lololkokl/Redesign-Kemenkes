@@ -30,6 +30,16 @@ export const TablePeraturan = ({ search = "" }) => {
     result = tableItems.filter((tableItem) => {
       return tableItem.value.toLowerCase().includes(search.toLowerCase());
     });
+
+    if (result.length === 0) {
+      return (
+        <div className="flex justify-center text-center my-5 md:my-10">
+          <h2 className="text-lg md:text-xl font-bold font-heading text-primary">
+            Maaf peraturan perundangan yang anda cari tidak dapat ditemukan
+          </h2>
+        </div>
+      );
+    }
   }
 
   return (

@@ -69,6 +69,17 @@ export const TablePublikasi = ({ index, search = "" }) => {
     result = tableItems[index].filter((tableItem) => {
       return tableItem.judul.toLowerCase().includes(search.toLowerCase());
     });
+
+    if (result.length === 0) {
+      return (
+        <div className="flex justify-center text-center my-5 md:my-10">
+          <h2 className="text-lg md:text-xl font-bold font-heading text-primary">
+            Maaf publikasi yang anda cari tidak dapat ditemukan, mohon cari pada
+            jenis publikasi lainnya
+          </h2>
+        </div>
+      );
+    }
   }
 
   return (
