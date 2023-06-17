@@ -6,7 +6,8 @@ export const TablePeraturan = ({ search = "" }) => {
       jenis: "Permenkes",
       nomor: "18 Tahun 2023",
       tentang: "Kegiatan Usaha Klinik Di Kawasan Ekonomi Khusus",
-      value: "Permenkes 18 Tahun 2023",
+      value:
+        "Permenkes 18 Tahun 2023 Kegiatan Usaha Klinik Di Kawasan Ekonomi Khusus",
     },
     {
       no: 2,
