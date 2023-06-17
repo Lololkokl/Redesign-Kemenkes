@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-export const Beritagrid = () => {
+export const Beritagrid = ({ search }) => {
   const news = [
     {
       id: 1,
@@ -72,10 +72,18 @@ export const Beritagrid = () => {
       link: "/berita/1",
     },
   ];
+
+  let result = [...news];
+  if (search !== "") {
+    result = news.slice(0, 3).filter((tableItem) => {
+      return tableItem.headline.toLowerCase().includes(search.toLowerCase());
+    });
+  }
+
   return (
     <div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-        {news.map((newItem) => {
+        {result.map((newItem) => {
           return (
             <NavLink to={newItem.link}>
               <div className="card flex flex-col justify-center">
