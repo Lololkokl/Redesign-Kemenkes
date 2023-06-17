@@ -4,21 +4,23 @@ export const Berita = () => {
   const news = [
     {
       img: "/images/anak.jpg",
-      headline: "Kasus Gagal Ginjal Akut Pada Anak Meningkat, Orang Tua Diminta Waspada",
+      headline:
+        "Kasus Gagal Ginjal Akut Pada Anak Meningkat, Orang Tua Diminta Waspada",
       tanggal: "11 Juni 2023",
-      link: "/berita/detail1",
+      link: "/berita/1",
     },
     {
       img: "/images/hipertensi.jpg",
-      headline: "Hipertensi Disebut sebagai Silent Killer, Menkes Budi Imbau Rutin Cek Tekanan Darah",
+      headline:
+        "Hipertensi Disebut sebagai Silent Killer, Menkes Budi Imbau Rutin Cek Tekanan Darah",
       tanggal: "10 Juni 2023",
-      link: "/berita/detail2",
+      link: "/berita/2",
     },
     {
       img: "/images/tbc.png",
       headline: "Deteksi TBC Capai Rekor Tertinggi di Tahun 2022",
       tanggal: "9 Juni 2023",
-      link: "/berita/detail3",
+      link: "/berita/3",
     },
   ];
   return (
