@@ -1,7 +1,8 @@
 import { NavLink } from "react-router-dom";
-import { CiFacebook, CiTwitter } from "react-icons/ci";
-import { AiOutlineYoutube } from "react-icons/ai";
+import { CiFacebook, CiTwitter, CiLocationOn } from "react-icons/ci";
+import { AiOutlineMail, AiOutlineYoutube } from "react-icons/ai";
 import { BsInstagram } from "react-icons/bs";
+import { BiPhoneCall } from "react-icons/bi";
 
 export const Footer = () => {
   const navItems = [
@@ -94,15 +95,17 @@ export const Footer = () => {
           >
             Kementerian Kesehatan
           </h4>
-          <p className="mt-3 text-xs sm:text-sm text-white font-paragraph">
+          <p className="mt-3 text-xs sm:text-sm text-white font-paragraph flex items-center gap-x-2">
+            <CiLocationOn />
             Jl. H.R. Rasuna Said Blok X5 Kav 4-9 Kuningan, Jakarta Selatan
-            <p className="mt-3 text-xs sm:text-sm text-white font-paragraph">
-          Halo Kemenkes 1500567 
           </p>
-            
+          <p className="mt-3 text-xs sm:text-sm text-white font-paragraph flex items-center gap-x-2">
+            <BiPhoneCall />
+            Halo Kemenkes 1500567
           </p>
-          <p className="mt-3 text-xs sm:text-sm text-white font-paragraph">
-          Email kontak@kemkes.go.id
+          <p className="mt-3 text-xs sm:text-sm text-white font-paragraph flex items-center gap-x-2">
+            <AiOutlineMail />
+            Email kontak@kemkes.go.id
           </p>
         </div>
 
