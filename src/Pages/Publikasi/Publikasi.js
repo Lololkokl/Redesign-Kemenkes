@@ -42,7 +42,7 @@ export const Publikasi = () => {
         setSearch={setSearch}
       />
       <TablePublikasi index={index} search={search} />
-      <Pagination />
+      <Pagination search={search} />
     </div>
   );
 };

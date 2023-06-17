@@ -16,7 +16,7 @@ export const Beritapage = () => {
         setSearch={setSearch}
       />
       <Beritagrid search={search} />
-      <Pagination />
+      <Pagination search={search} />
     </div>
   );
 };

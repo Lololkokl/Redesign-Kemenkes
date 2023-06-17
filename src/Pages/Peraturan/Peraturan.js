@@ -15,7 +15,7 @@ export const Peraturan = () => {
         setSearch={setSearch}
       />
       <TablePeraturan search={search} />
-      <Pagination />
+      <Pagination search={search} />
     </div>
   );
 };
