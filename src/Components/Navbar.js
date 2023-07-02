@@ -47,7 +47,7 @@ export const Navbar = () => {
         { title: "Struktur", link: "/struktur" },
         { title: "Tugas dan Fungsi", link: "/tugas" },
         { title: "Unit Kerja dan Pejabat", link: "/unit" },
-        { title: "Link Terkait", link: "/linkterkait" },
+        { title: "Tautan Terkait", link: "/linkterkait" },
       ],
     },
   ];

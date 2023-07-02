@@ -41,7 +41,7 @@ export const LinkTerkait = () => {
   ];
   return (
     <div className="mx-16 md:mx-48 mt-12 mb-24 text-justify">
-      <Pagetitle text="Link Terkait" />
+      <Pagetitle text="Tautan Terkait" />
       <Accordion items={items} type="linkterkait" />
     </div>
   );
