@@ -31,16 +31,16 @@ export const Hero = () => {
       </div>
 
       <GelombangAtas data="#00B1A9" />
-      <div className="grid grid-cols-1 md:grid-cols-2 items-center bg-primary gap-x-12 py-8 px-12 md:px-32">
+      <div className="grid grid-cols-1 lg:grid-cols-2 items-center bg-primary gap-x-12 py-8 px-12 md:px-32">
         <img
           src="/images/2.png"
           alt=""
-          className="hidden md:inline-block w-8/12 md:w-full justify-self-center"
+          className="hidden lg:inline-block w-8/12 lg:w-full justify-self-center"
           data-aos="zoom-out-right"
           data-aos-once="true"
         />
         <div className=" text-white font-heading ">
-          <h1 className="text-2xl md:text-3xl font-bold md:text-start text-center self-end my-2">
+          <h1 className="text-2xl lg:text-3xl font-bold lg:text-start text-center self-end my-2">
             Kesehatan Untuk Semua
           </h1>
           <p className="text-justify leading-8 font-paragraph">
