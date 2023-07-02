@@ -44,7 +44,7 @@ export const Hero = () => {
             Kesehatan Untuk Semua
           </h1>
           <p className="text-justify leading-8 font-paragraph">
-            Kementerian Kesehatan berkomitmen mambantu masyarakat Indonesia
+            Kementerian Kesehatan berkomitmen membantu masyarakat Indonesia
             memiliki kesehatan yang lebih baik. Kami berupaya untuk menciptakan
             sistem kesehatan nasional yang baik dan terintegrasi mulai dari
             pencegahan, penanganan, sampai peningkatan kualitas hidup masyarakat
